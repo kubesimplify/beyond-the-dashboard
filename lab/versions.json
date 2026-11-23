@@ -1,0 +1,5 @@
+{
+  "VictoriaMetrics": "v1.153.0",
+  "VictoriaLogs": "v1.53.0",
+  "VictoriaTraces": "v0.12.0"
+}

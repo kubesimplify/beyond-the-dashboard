@@ -1,0 +1,137 @@
+[
+  {
+    "phase": "healthy",
+    "version": "v1",
+    "requests": 60,
+    "started_unix": 1792168023.78904,
+    "query_time_unix": 1792168048.349942,
+    "client_mean_ms": 59.403,
+    "client_p95_ms": 78.165,
+    "inventory_calls_per_checkout": 1,
+    "business_result": {
+      "outcome": "accepted",
+      "items": [
+        {
+          "sku": "BOOK-001",
+          "warehouse": "east",
+          "variant": "paperback",
+          "required_quantity": 6,
+          "available_quantity": 20
+        }
+      ]
+    },
+    "http_errors": 0,
+    "example_trace_id": "5cedc35afabd2f85916c72098a4b6f28",
+    "example_trace_span_count": 3,
+    "example_log_count": 7,
+    "trace_search_results": 6,
+    "example_root_duration_ms": 55.674,
+    "example_client_span_id": "3cd4748582132cd9",
+    "metric_request_rate": 2.0,
+    "metric_error_percent": 0.0,
+    "metric_histogram_p95_seconds": 0.075,
+    "metric_inventory_request_rate": 2.0,
+    "metric_inventory_p95_seconds": 0.07222222222222222,
+    "metric_calls_per_checkout": 1.0,
+    "metric_share_within_200ms": 1.0,
+    "metric_error_ratio_plain": 0.0,
+    "metric_outcome_rates": {
+      "accepted": 2.0,
+      "error": 0.0,
+      "invalid": 0.0,
+      "out_of_stock": 0.0
+    },
+    "settled_trace_search_results": 60,
+    "settled_root_span_p95_ms": 72.188
+  },
+  {
+    "phase": "fault",
+    "version": "v2",
+    "requests": 60,
+    "started_unix": 1792168068.366296,
+    "query_time_unix": 1792168093.213511,
+    "client_mean_ms": 334.841,
+    "client_p95_ms": 388.717,
+    "inventory_calls_per_checkout": 6,
+    "business_result": {
+      "outcome": "accepted",
+      "items": [
+        {
+          "sku": "BOOK-001",
+          "warehouse": "east",
+          "variant": "paperback",
+          "required_quantity": 6,
+          "available_quantity": 20
+        }
+      ]
+    },
+    "http_errors": 0,
+    "example_trace_id": "92ccf35aba1875b668ee9c17d8a1a190",
+    "example_trace_span_count": 13,
+    "example_log_count": 7,
+    "trace_search_results": 51,
+    "example_root_duration_ms": 323.328,
+    "example_client_span_id": "b1bafae56af5218f",
+    "metric_request_rate": 2.0,
+    "metric_error_percent": 0.0,
+    "metric_histogram_p95_seconds": 0.4,
+    "metric_inventory_request_rate": 12.0,
+    "metric_inventory_p95_seconds": 0.07326388888888888,
+    "metric_calls_per_checkout": 6.0,
+    "metric_share_within_200ms": 0.0,
+    "metric_error_ratio_plain": 0.0,
+    "metric_outcome_rates": {
+      "accepted": 2.0,
+      "error": 0.0,
+      "invalid": 0.0,
+      "out_of_stock": 0.0
+    },
+    "settled_trace_search_results": 60,
+    "settled_root_span_p95_ms": 374.984
+  },
+  {
+    "phase": "fixed",
+    "version": "v2.1",
+    "requests": 60,
+    "started_unix": 1792168123.590506,
+    "query_time_unix": 1792168148.158849,
+    "client_mean_ms": 59.868,
+    "client_p95_ms": 80.231,
+    "inventory_calls_per_checkout": 1,
+    "business_result": {
+      "outcome": "accepted",
+      "items": [
+        {
+          "sku": "BOOK-001",
+          "warehouse": "east",
+          "variant": "paperback",
+          "required_quantity": 6,
+          "available_quantity": 20
+        }
+      ]
+    },
+    "http_errors": 0,
+    "example_trace_id": "7c2877dac06c54515c85792056cc5eee",
+    "example_trace_span_count": 3,
+    "example_log_count": 7,
+    "trace_search_results": 6,
+    "example_root_duration_ms": 53.759,
+    "example_client_span_id": "91025e80083462b2",
+    "metric_request_rate": 2.0,
+    "metric_error_percent": 0.0,
+    "metric_histogram_p95_seconds": 0.0875,
+    "metric_inventory_request_rate": 2.0,
+    "metric_inventory_p95_seconds": 0.07222222222222222,
+    "metric_calls_per_checkout": 1.0,
+    "metric_share_within_200ms": 1.0,
+    "metric_error_ratio_plain": 0.0,
+    "metric_outcome_rates": {
+      "accepted": 2.0,
+      "error": 0.0,
+      "invalid": 0.0,
+      "out_of_stock": 0.0
+    },
+    "settled_trace_search_results": 60,
+    "settled_root_span_p95_ms": 73.773
+  }
+]

@@ -1,0 +1,29 @@
+# Alerting rules. vmalert runs each expression against VictoriaMetrics every
+# five seconds. An alert is pending while its expression returns a result, and
+# firing once that has lasted for the "for" duration.
+#
+# The windows are sized for the lab's 30-second traffic steps. For a real
+# service, use rate(...[5m]) and for: 5m or longer, so a short blip does not
+# wake anyone up.
+groups:
+  - name: checkout
+    interval: 5s
+    rules:
+      - alert: CheckoutSlow
+        expr: |
+          histogram_quantile(0.95, sum by (le) (
+            rate(app_http_request_duration_seconds_bucket{service="checkout"}[10s])
+          )) > 0.2
+        for: 10s
+        labels:
+          severity: page
+        annotations:
+          summary: Checkout p95 is above 200 ms
+          description: Search for slow checkout traces in this window, then read their decision logs.
+      - alert: TargetDown
+        expr: up == 0
+        for: 30s
+        labels:
+          severity: ticket
+        annotations:
+          summary: "vmagent has not scraped {{ $labels.instance }} for 30 seconds"

@@ -1,0 +1,8 @@
+# vmagent reads the two apps' /metrics pages every two seconds, as in the lab.
+# Used by stack.py, which sends the samples to VictoriaStack through vmauth.
+global:
+  scrape_interval: 2s
+scrape_configs:
+  - job_name: book-lab
+    static_configs:
+      - targets: ['127.0.0.1:8080', '127.0.0.1:8081']

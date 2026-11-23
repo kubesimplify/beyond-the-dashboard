@@ -1,0 +1,41 @@
+# Values for the victoria-metrics-k8s-stack Helm chart, as used on page 45.
+# Metrics are on by default. This turns on logs, traces, pod log
+# collection, and one vmauth in front of all three databases.
+fullnameOverride: stack
+
+vlsingle:
+  enabled: true
+
+vtsingle:
+  enabled: true
+
+# Collects the logs of every pod and sends them to VictoriaLogs.
+vlagent:
+  enabled: true
+
+# The single entry point, with the same path prefixes as the Docker Compose demo.
+# Its Service has the default type, ClusterIP, so page 45 reaches it with kubectl port-forward.
+# unauthorizedUserAccessSpec means vmauth has no users: it asks for no login, and every client that
+# reaches it can read and write. That is a demo shortcut, for a cluster on your own machine.
+# A real setup gives vmauth users: https://docs.victoriametrics.com/victoriastack/access-control/
+vmauth:
+  enabled: true
+  spec:
+    unauthorizedUserAccessSpec:
+      url_map:
+        # VictoriaMetrics serves its API from the root, so two parts are removed: /metrics and /select (or /insert).
+        - src_paths: ["/metrics/select/.*", "/metrics/insert/.*"]
+          drop_src_path_prefix_parts: 2
+          url_prefix: ["http://vmsingle-stack:8428"]
+        # VictoriaLogs and VictoriaTraces have /select and /insert in their own paths, so only one part is removed.
+        - src_paths: ["/logs/select/.*", "/logs/insert/.*"]
+          drop_src_path_prefix_parts: 1
+          url_prefix: ["http://vlsingle-stack:9428"]
+        - src_paths: ["/traces/select/.*", "/traces/insert/.*"]
+          drop_src_path_prefix_parts: 1
+          url_prefix: ["http://vtsingle-stack:10428"]
+
+# Grafana needs this plugin to get a VictoriaLogs data source.
+grafana:
+  plugins:
+    - victoriametrics-logs-datasource

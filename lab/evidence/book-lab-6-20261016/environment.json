@@ -1,0 +1,45 @@
+{
+  "tested_at_utc": "2026-10-16T16:26:59.774130+00:00",
+  "os": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.12.4 (main, Jun  6 2024, 18:26:44) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "backend_versions": {
+    "VictoriaMetrics": "v1.153.0",
+    "VictoriaLogs": "v1.53.0",
+    "VictoriaTraces": "v0.12.0"
+  },
+  "execution": "native",
+  "workload": "one first checkout; then 60 requests per version (v1, v2, v2.1), one scheduled every 0.5 seconds; then 3 out-of-stock and 2 invalid checkouts after the timed phases",
+  "note": "Synthetic fixed delay; teaching measurements, not a backend benchmark.",
+  "application_version": "book-lab-6",
+  "source_sha256": {
+    "app.py": "09c69091537a2cf3b9000d88525734a1187860ae069ebb53d5b0f4dac3f63594",
+    "basket.py": "f6b41c62cc7d4a673aafc57fba269dd0ff69d2f4ea291fd21649661197224ddf",
+    "control.py": "20a64392bb47743d22019da8f411ae091825a936ff6ff6345e4176b5e30fc86e",
+    "http_telemetry.py": "0597524056f2a5d62275b95a04be0029d2436f1e87385431259b9fa7f7b2df84",
+    "query.py": "db5db147bcc861e6f7d2a11cfbc05f1bdf5a4964c54f07ee4fa11ffd49295379",
+    "scenario.py": "1e0a9dc357ad0c3013267f62cbeb629ed1d2ad160cc87003e3ee4b967b31b685",
+    "setup.py": "137910030fdc7e5628571b12ce23e01b5dc9205529df3760b33900c71cf9b416",
+    "test_basket.py": "6b8023a74fbe132b3849c753ee7e3d53a24923859b1f6a8dd2b52c0ed666bdf4",
+    "test_http.py": "150da4ad934583476e41ccc8b56286b2d9be7cb71ad8f0f8a5a4931824e19f93",
+    "test_http_telemetry.py": "57022275904f1aa2c418a5cd14b227f6f08faf79d28692161ff5fe6dc1b90489",
+    "traffic.py": "23ac3f9bbc23fcb29edb81d98d9ddf229e0f6682c9627796c8bd684be33b9211"
+  },
+  "cpu": "Apple M1 Max",
+  "memory_bytes": "68719476736",
+  "dependencies": [
+    "googleapis-common-protos==1.75.5",
+    "opentelemetry-api==1.45.0",
+    "opentelemetry-exporter-http-transport==0.66b0",
+    "opentelemetry-exporter-otlp-common==0.66b0",
+    "opentelemetry-exporter-otlp-proto-common==1.45.0",
+    "opentelemetry-exporter-otlp-proto-http==1.45.0",
+    "opentelemetry-proto==1.45.0",
+    "opentelemetry-sdk==1.45.0",
+    "opentelemetry-semantic-conventions==0.66b0",
+    "prometheus_client==0.26.0",
+    "protobuf==7.36.2",
+    "typing_extensions==4.16.0",
+    "urllib3==2.8.0"
+  ]
+}

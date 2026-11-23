@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="370" viewBox="0 0 900 370">
+<title>cover evidence</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<rect x="30" y="45" width="245" height="250" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="30.5,46.3 273.8,45.1 273.5,295.5 31.5,294.6 31.3,43.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="31.0,45.4 274.2,43.7 273.4,294.6 28.8,296.2 29.4,44.8" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="152" y="87.8" font-family="Lato, Helvetica, Arial, sans-serif" font-size="28" fill="#263D3B" text-anchor="middle">
+<tspan x="152" dy="0">The pattern</tspan>
+</text>
+<rect x="330" y="45" width="245" height="250" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="328.5,46.4 576.1,45.9 574.3,296.0 331.0,293.6 330.0,46.6" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="331.4,45.0 575.1,43.6 576.5,294.8 328.7,295.6 330.0,46.0" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="452" y="87.8" font-family="Lato, Helvetica, Arial, sans-serif" font-size="28" fill="#263D3B" text-anchor="middle">
+<tspan x="452" dy="0">The request</tspan>
+</text>
+<rect x="630" y="45" width="245" height="250" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="631.3,46.5 873.8,46.5 876.0,296.0 630.3,294.4 630.6,44.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="629.2,46.2 876.5,44.4 876.3,295.5 628.8,295.6 629.5,45.5" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="752" y="87.8" font-family="Lato, Helvetica, Arial, sans-serif" font-size="28" fill="#263D3B" text-anchor="middle">
+<tspan x="752" dy="0">The detail</tspan>
+</text>
+<polyline points="58,268 58,118" fill="none" stroke="#657572" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="58,268 255,268" fill="none" stroke="#657572" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="66,240 100,238 118,240 124,146 178,144 184,238 216,241 248,239" fill="none" stroke="#B95838" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="70" y="136.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#657572" text-anchor="start">
+<tspan x="70" dy="0">p95</tspan>
+</text>
+<rect x="350" y="112" width="206" height="13" rx="3" fill="#E6F2EE" stroke="none"/>
+<polyline points="348.4,110.4 554.6,112.5 555.0,125.0 350.4,125.5 351.6,113.2" fill="none" stroke="#16796F" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="351.2,113.3 554.8,111.0 555.3,125.3 348.5,126.2 351.3,113.0" fill="none" stroke="#16796F" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="354" y="134" width="31" height="10" rx="2" fill="#FBEDD7" stroke="none"/>
+<polyline points="353.9,133.7 385.6,134.5 383.4,143.4 355.4,143.8 353.4,132.9" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="352.5,133.4 386.5,134.7 386.3,143.6 352.8,142.7 352.8,134.7" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="358" y="146" width="23" height="8" rx="2" fill="#FFFEFA" stroke="none"/>
+<polyline points="357.9,145.2 379.6,147.4 380.8,153.3 357.7,153.5 356.8,146.4" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="356.4,145.7 381.0,145.2 379.5,153.0 358.0,152.7 357.5,147.0" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="387" y="159" width="31" height="10" rx="2" fill="#FBEDD7" stroke="none"/>
+<polyline points="386.0,160.4 418.5,158.4 419.2,168.8 386.1,170.5 388.3,158.9" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="388.4,158.8 418.8,159.5 418.1,169.9 387.0,169.4 387.8,160.0" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="391" y="171" width="23" height="8" rx="2" fill="#FFFEFA" stroke="none"/>
+<polyline points="390.2,171.6 414.1,169.7 413.2,177.6 390.9,178.5 390.8,171.4" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="389.5,170.2 413.4,170.0 414.5,177.6 390.7,179.7 391.1,172.1" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="420" y="184" width="31" height="10" rx="2" fill="#FBEDD7" stroke="none"/>
+<polyline points="421.0,185.6 450.1,182.6 451.8,194.4 418.8,194.6 421.4,185.3" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="419.6,184.1 449.7,184.3 450.0,193.6 421.5,193.9 420.9,185.3" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="424" y="196" width="23" height="8" rx="2" fill="#FFFEFA" stroke="none"/>
+<polyline points="424.1,197.4 448.2,195.0 448.1,203.6 424.7,204.2 425.1,195.2" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="422.5,195.4 446.3,196.4 445.9,204.4 424.3,203.2 422.9,196.3" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="453" y="209" width="31" height="10" rx="2" fill="#FBEDD7" stroke="none"/>
+<polyline points="453.8,208.5 482.5,209.4 482.9,220.5 451.4,218.3 454.0,210.0" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="452.7,208.8 484.4,209.9 484.3,220.0 454.5,218.3 454.3,208.4" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="457" y="221" width="23" height="8" rx="2" fill="#FFFEFA" stroke="none"/>
+<polyline points="457.1,222.2 478.4,220.2 481.3,228.2 455.9,229.4 456.9,220.5" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="456.7,220.1 479.7,221.0 479.6,230.1 457.7,230.1 457.2,220.6" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="486" y="234" width="31" height="10" rx="2" fill="#FBEDD7" stroke="none"/>
+<polyline points="487.4,235.4 515.5,235.3 517.3,244.0 485.1,243.7 487.6,233.8" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="485.8,233.3 515.8,232.5 516.4,243.1 487.2,245.3 484.8,232.5" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="490" y="246" width="23" height="8" rx="2" fill="#FFFEFA" stroke="none"/>
+<polyline points="489.4,245.0 512.7,245.0 514.1,255.4 490.2,254.4 491.5,244.8" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="489.6,247.2 513.1,246.0 512.0,252.6 490.0,252.8 490.1,247.5" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="519" y="259" width="31" height="10" rx="2" fill="#FBEDD7" stroke="none"/>
+<polyline points="518.2,260.3 549.8,260.4 551.2,268.8 518.8,267.7 518.5,258.9" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="518.1,258.8 548.5,257.8 551.4,268.6 518.5,269.8 520.3,258.5" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="523" y="271" width="23" height="8" rx="2" fill="#FFFEFA" stroke="none"/>
+<polyline points="523.1,272.3 545.5,271.2 545.0,278.9 523.9,279.8 522.2,272.1" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="524.2,269.6 546.0,269.8 544.8,278.4 524.4,278.4 523.4,270.8" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="650" y="112" width="205" height="150" rx="6" fill="#FFFEFA" stroke="none"/>
+<polyline points="649.2,110.6 855.4,112.1 856.3,261.4 649.8,262.4 648.4,111.5" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="649.4,111.2 856.5,110.6 854.7,260.9 650.9,261.7 651.1,113.0" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="664" y="141.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="start">
+<tspan x="664" dy="0">line_id: line-2</tspan>
+</text>
+<text x="664" y="175.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="start">
+<tspan x="664" dy="0">sku: BOOK-001</tspan>
+</text>
+<text x="664" y="209.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="start">
+<tspan x="664" dy="0">scope: line</tspan>
+</text>
+<text x="664" y="243.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#B95838" text-anchor="start">
+<tspan x="664" dy="0">decision: fetch</tspan>
+</text>
+<polyline points="282,185 322,185" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="312.0950818741206" y1="189.78462087522354" x2="322" y2="185" stroke="#16796F" stroke-width="2.4"/>
+<line x1="312.0950818741206" y1="180.21537912477646" x2="322" y2="185" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="582,185 622,185" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="612.0950818741205" y1="189.78462087522354" x2="622" y2="185" stroke="#16796F" stroke-width="2.4"/>
+<line x1="612.0950818741205" y1="180.21537912477646" x2="622" y2="185" stroke="#16796F" stroke-width="2.4"/>
+<text x="450" y="345.25" font-family="Lato, Helvetica, Arial, sans-serif" font-size="25" fill="#16796F" text-anchor="middle">
+<tspan x="450" dy="0">One investigation path: metrics, traces, logs</tspan>
+</text>
+</svg>

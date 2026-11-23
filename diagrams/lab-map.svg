@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<title>lab map</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<rect x="15" y="95" width="170" height="110" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="15.4,93.4 185.5,95.4 185.4,203.8 13.5,205.2 14.4,96.0" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="14.7,94.3 185.5,95.1 184.2,203.9 16.2,205.1 14.3,95.9" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="100" y="121.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="middle">
+<tspan x="100" dy="0">traffic.py</tspan>
+</text>
+<text x="100" y="147.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#657572" text-anchor="middle">
+<tspan x="100" dy="0">or curl</tspan>
+</text>
+<text x="100" y="180.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#263D3B" text-anchor="middle">
+<tspan x="100" dy="0">POST /checkout</tspan>
+</text>
+<rect x="225" y="30" width="270" height="440" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="225.4,30.9 495.0,31.3 494.8,469.5 225.6,470.8 224.9,31.4" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="223.6,28.7 495.1,29.3 495.0,471.3 223.4,468.9 226.5,30.3" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="360" y="57.849999999999994" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="middle">
+<tspan x="360" dy="0">Lab application</tspan>
+</text>
+<rect x="250" y="95" width="220" height="100" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="249.4,96.5 470.5,95.4 469.7,193.5 250.7,193.6 249.7,93.8" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="250.9,95.7 469.6,94.4 468.8,195.6 249.4,194.0 251.4,95.2" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="360" y="124.4" font-family="Lato, Helvetica, Arial, sans-serif" font-size="24" fill="#263D3B" text-anchor="middle">
+<tspan x="360" dy="0">Checkout</tspan>
+</text>
+<text x="360" y="158.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#657572" text-anchor="middle">
+<tspan x="360" dy="0">:8080</tspan>
+</text>
+<polyline points="187,150 246,150" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="236.09508187412055" y1="154.78462087522354" x2="246" y2="150" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="236.09508187412055" y1="145.21537912477646" x2="246" y2="150" stroke="#263D3B" stroke-width="2.4"/>
+<polyline points="320,197 320,324" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="315.21537912477646" y1="314.0950818741206" x2="320" y2="324" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="324.78462087522354" y1="314.0950818741206" x2="320" y2="324" stroke="#263D3B" stroke-width="2.4"/>
+<text x="332" y="250.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#263D3B" text-anchor="start">
+<tspan x="332" dy="0">GET /inventory</tspan>
+<tspan x="332" dy="21.25">/check</tspan>
+</text>
+<rect x="250" y="330" width="220" height="100" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="251.2,329.4 470.4,330.7 468.9,429.1 249.6,429.7 249.0,329.7" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="248.5,330.9 471.0,329.7 468.8,429.4 250.9,428.5 250.8,328.8" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="360" y="359.4" font-family="Lato, Helvetica, Arial, sans-serif" font-size="24" fill="#263D3B" text-anchor="middle">
+<tspan x="360" dy="0">Inventory</tspan>
+</text>
+<text x="360" y="393.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#657572" text-anchor="middle">
+<tspan x="360" dy="0">:8081</tspan>
+</text>
+<text x="360" y="454.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="360" dy="0">both emit telemetry</tspan>
+</text>
+<rect x="575" y="60" width="220" height="110" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="574.9,61.3 794.4,59.4 794.7,171.2 574.5,168.8 575.5,58.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="574.1,61.0 794.1,58.4 793.5,171.2 576.0,171.3 574.0,60.5" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="685" y="87.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="685" dy="0">vmagent</tspan>
+</text>
+<text x="685" y="115.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#657572" text-anchor="middle">
+<tspan x="685" dy="0">:8429</tspan>
+</text>
+<text x="685" y="140.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#263D3B" text-anchor="middle">
+<tspan x="685" dy="0">both apps, every 2 s</tspan>
+</text>
+<text x="535" y="78.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="middle">
+<tspan x="535" dy="0">/metrics</tspan>
+</text>
+<polyline points="569,90 501,90" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+<line x1="510.9049181258794" y1="85.21537912477646" x2="501" y2="90" stroke="#16796F" stroke-width="2.4"/>
+<line x1="510.9049181258794" y1="94.78462087522354" x2="501" y2="90" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="501,140 569,140" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="559.0950818741205" y1="144.78462087522354" x2="569" y2="140" stroke="#16796F" stroke-width="2.4"/>
+<line x1="559.0950818741205" y1="135.21537912477646" x2="569" y2="140" stroke="#16796F" stroke-width="2.4"/>
+<text x="535" y="162.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="middle">
+<tspan x="535" dy="0">samples</tspan>
+</text>
+<polyline points="700,172 700,209" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="695.2153791247765" y1="199.09508187412055" x2="700" y2="209" stroke="#16796F" stroke-width="2.4"/>
+<line x1="704.7846208752235" y1="199.09508187412055" x2="700" y2="209" stroke="#16796F" stroke-width="2.4"/>
+<text x="690" y="192.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="end">
+<tspan x="690" dy="0">remote write</tspan>
+</text>
+<rect x="640" y="215" width="250" height="86" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="640.7,215.7 888.8,214.6 889.3,301.4 640.9,301.0 640.9,215.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="641.2,215.4 889.6,215.6 890.4,302.4 641.2,300.4 640.1,216.1" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="765" y="241.7" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" fill="#263D3B" text-anchor="middle">
+<tspan x="765" dy="0">VictoriaMetrics</tspan>
+</text>
+<text x="765" y="273.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#657572" text-anchor="middle">
+<tspan x="765" dy="0">:8428</tspan>
+</text>
+<rect x="508" y="222" width="112" height="72" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="509.1,223.4 620.1,222.5 620.5,293.9 508.4,292.9 509.4,223.3" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="506.6,223.5 619.0,221.2 619.2,292.7 507.8,293.8 507.1,220.9" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="564" y="247.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="middle">
+<tspan x="564" dy="0">vmalert</tspan>
+</text>
+<text x="564" y="274.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="564" dy="0">:8880</tspan>
+</text>
+<polyline points="622,258 636,258" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+<line x1="626.0950818741205" y1="262.78462087522354" x2="636" y2="258" stroke="#16796F" stroke-width="2.4"/>
+<line x1="626.0950818741205" y1="253.21537912477646" x2="636" y2="258" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="501,365 569,365" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="559.0950818741205" y1="369.78462087522354" x2="569" y2="365" stroke="#16796F" stroke-width="2.4"/>
+<line x1="559.0950818741205" y1="360.21537912477646" x2="569" y2="365" stroke="#16796F" stroke-width="2.4"/>
+<rect x="575" y="330" width="315" height="72" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="574.8,328.9 891.3,329.7 890.8,403.4 575.5,403.3 576.1,328.7" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="574.3,331.5 888.4,329.2 890.7,402.7 576.1,401.1 574.3,329.6" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="732" y="354.7" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" fill="#263D3B" text-anchor="middle">
+<tspan x="732" dy="0">VictoriaTraces</tspan>
+</text>
+<text x="732" y="383.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#657572" text-anchor="middle">
+<tspan x="732" dy="0">:10428, OTLP spans</tspan>
+</text>
+<polyline points="501,455 569,455" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="559.0950818741205" y1="459.78462087522354" x2="569" y2="455" stroke="#16796F" stroke-width="2.4"/>
+<line x1="559.0950818741205" y1="450.21537912477646" x2="569" y2="455" stroke="#16796F" stroke-width="2.4"/>
+<rect x="575" y="420" width="315" height="72" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="576.6,421.5 888.5,420.3 890.4,491.3 575.1,492.0 574.9,420.7" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="576.1,419.7 889.7,420.2 890.2,492.8 573.9,490.8 574.5,421.1" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="732" y="444.7" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" fill="#263D3B" text-anchor="middle">
+<tspan x="732" dy="0">VictoriaLogs</tspan>
+</text>
+<text x="732" y="473.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#657572" text-anchor="middle">
+<tspan x="732" dy="0">:9428, JSON lines</tspan>
+</text>
+<polyline points="20,530 80,530" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="70.09508187412055" y1="534.7846208752235" x2="80" y2="530" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="70.09508187412055" y1="525.2153791247765" x2="80" y2="530" stroke="#263D3B" stroke-width="2.4"/>
+<text x="92" y="533.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="start">
+<tspan x="92" dy="0">request traffic</tspan>
+</text>
+<polyline points="320,530 380,530" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="370.0950818741206" y1="534.7846208752235" x2="380" y2="530" stroke="#16796F" stroke-width="2.4"/>
+<line x1="370.0950818741206" y1="525.2153791247765" x2="380" y2="530" stroke="#16796F" stroke-width="2.4"/>
+<text x="392" y="533.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="start">
+<tspan x="392" dy="0">telemetry</tspan>
+</text>
+<polyline points="560,530 620,530" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+<line x1="610.0950818741205" y1="534.7846208752235" x2="620" y2="530" stroke="#16796F" stroke-width="2.4"/>
+<line x1="610.0950818741205" y1="525.2153791247765" x2="620" y2="530" stroke="#16796F" stroke-width="2.4"/>
+<text x="632" y="533.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="start">
+<tspan x="632" dy="0">scrape or query</tspan>
+</text>
+</svg>

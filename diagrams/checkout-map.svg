@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="310" viewBox="0 0 900 310">
+<title>checkout map</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<rect x="10" y="30" width="240" height="240" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="10.7,31.6 249.8,31.5 249.0,268.7 8.6,269.7 8.6,30.8" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="10.9,30.1 251.5,30.9 250.7,270.7 11.3,269.0 9.8,30.4" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="130" y="60.7" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" fill="#263D3B" text-anchor="middle">
+<tspan x="130" dy="0">Same basket</tspan>
+</text>
+<text x="130" y="104.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#263D3B" text-anchor="middle">
+<tspan x="130" dy="0">6 lines × 1 unit</tspan>
+<tspan x="130" dy="23.75">BOOK-001</tspan>
+<tspan x="130" dy="23.75">east / paperback</tspan>
+</text>
+<text x="130" y="206.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#16796F" text-anchor="middle">
+<tspan x="130" dy="0">= 6 units of</tspan>
+<tspan x="130" dy="23.75">one stock key</tspan>
+</text>
+<text x="280" y="47.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#16796F" text-anchor="start">
+<tspan x="280" dy="0">Versions 1 and 2.1: fetch once, then reuse</tspan>
+</text>
+<rect x="280" y="66" width="69" height="40" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="280.9,65.6 349.6,66.7 348.4,107.2 280.7,106.9 281.1,65.6" fill="none" stroke="#16796F" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="278.9,65.3 348.9,67.4 350.2,107.3 280.5,104.4 281.1,65.9" fill="none" stroke="#16796F" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="314" y="89.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="314" dy="0">fetch</tspan>
+</text>
+<polyline points="354,70 354,102" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="359,70 359,102" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="364,70 364,102" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="369,70 369,102" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="374,70 374,102" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="352" y="124.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="start">
+<tspan x="352" dy="0">reuse ×5</tspan>
+</text>
+<polyline points="384,58 384,106" fill="none" stroke="#263D3B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="394" y="88.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#263D3B" text-anchor="start">
+<tspan x="394" dy="0">respond ~50 ms</tspan>
+</text>
+<text x="280" y="163.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#B95838" text-anchor="start">
+<tspan x="280" dy="0">Version 2: fetch again for every line</tspan>
+</text>
+<rect x="280" y="180" width="69" height="40" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="280.2,180.7 350.3,180.7 349.1,219.4 278.6,219.6 280.7,180.0" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="279.5,179.4 350.4,181.0 349.8,219.6 281.1,220.5 278.9,181.1" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="314" y="203.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="314" dy="0">fetch</tspan>
+</text>
+<rect x="366" y="180" width="69" height="40" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="366.0,180.3 434.3,180.2 433.9,220.1 366.3,219.3 364.5,178.5" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="364.6,180.0 434.9,181.4 435.4,219.7 367.2,219.5 366.2,179.6" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="400" y="203.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="400" dy="0">fetch</tspan>
+</text>
+<rect x="452" y="180" width="69" height="40" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="452.0,179.5 521.9,180.5 521.0,219.9 453.2,220.3 452.1,180.8" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="453.4,179.9 519.8,178.8 520.7,219.0 452.5,220.4 453.2,180.9" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="486" y="203.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="486" dy="0">fetch</tspan>
+</text>
+<rect x="538" y="180" width="69" height="40" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="539.5,178.9 607.3,180.3 606.6,221.0 538.9,219.2 538.4,181.1" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="537.2,181.0 605.6,179.5 606.2,220.1 538.2,219.3 537.2,180.6" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="572" y="203.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="572" dy="0">fetch</tspan>
+</text>
+<rect x="624" y="180" width="69" height="40" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="624.4,181.1 692.3,179.4 691.7,220.2 623.5,220.5 624.6,179.7" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="623.8,179.1 692.0,178.6 691.6,219.6 622.5,218.9 623.6,180.6" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="658" y="203.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="658" dy="0">fetch</tspan>
+</text>
+<rect x="710" y="180" width="69" height="40" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="708.7,179.6 780.0,180.0 779.0,218.6 708.9,220.0 709.4,180.5" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="708.8,180.7 780.5,179.5 778.9,220.3 708.7,219.2 710.9,180.6" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="744" y="203.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="744" dy="0">fetch</tspan>
+</text>
+<polyline points="800,172 800,228" fill="none" stroke="#263D3B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="808" y="187.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="start">
+<tspan x="808" dy="0">respond</tspan>
+</text>
+<text x="808" y="213.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="start">
+<tspan x="808" dy="0">~300 ms</tspan>
+</text>
+<polyline points="280,256 876,256" fill="none" stroke="#657572" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="866.0950818741205" y1="260.78462087522354" x2="876" y2="256" stroke="#657572" stroke-width="2.4"/>
+<line x1="866.0950818741205" y1="251.21537912477646" x2="876" y2="256" stroke="#657572" stroke-width="2.4"/>
+<text x="870" y="278.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="end">
+<tspan x="870" dy="0">time (illustrative)</tspan>
+</text>
+</svg>

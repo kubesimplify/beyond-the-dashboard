@@ -1,0 +1,169 @@
+## 17:22:52 UTC  kind v0.32.0 go1.26.3 darwin/arm64, helm v4.1.4+g05fa379, docker 29.5.2, run on 2026-11-22
+
+## 17:22:52 UTC  the commands of page 45, from the lab directory
+
+# 17:22:52 UTC
+$ kind create cluster --name btd-bookshop
+Creating cluster "btd-bookshop" ...
+ • Ensuring node image (kindest/node:v1.36.1) 🖼  ...
+ ✓ Ensuring node image (kindest/node:v1.36.1) 🖼
+ • Preparing nodes 📦   ...
+ ✓ Preparing nodes 📦 
+ • Writing configuration 📜  ...
+ ✓ Writing configuration 📜
+ • Starting control-plane 🕹️  ...
+ ✓ Starting control-plane 🕹️
+ • Installing CNI 🔌  ...
+ ✓ Installing CNI 🔌
+ • Installing StorageClass 💾  ...
+ ✓ Installing StorageClass 💾
+Set kubectl context to "kind-btd-bookshop"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-btd-bookshop
+
+Have a question, bug, or feature request? Let us know! https://kind.sigs.k8s.io/#community 🙂
+
+# 17:23:05 UTC
+$ helm repo add vm https://victoriametrics.github.io/helm-charts/
+"vm" has been added to your repositories
+
+# 17:23:08 UTC
+$ helm repo update
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "vm" chart repository
+Update Complete. ⎈Happy Helming!⎈
+
+# 17:23:10 UTC
+$ helm install stack vm/victoria-metrics-k8s-stack --version 0.98.1 --namespace monitoring --create-namespace -f config/stack-values.yaml
+NAME: stack
+LAST DEPLOYED: Sun Nov 22 22:53:11 2026
+NAMESPACE: monitoring
+STATUS: deployed
+REVISION: 1
+DESCRIPTION: Install complete
+NOTES:
+
+
+## 17:24:34 UTC  waiting for the workloads to roll out
+
+deployment "vmauth-stack" successfully rolled out
+deployment "vmsingle-stack" successfully rolled out
+deployment "vlsingle-stack" successfully rolled out
+deployment "vtsingle-stack" successfully rolled out
+deployment "vmagent-stack" successfully rolled out
+deployment "stack-kube-state-metrics" successfully rolled out
+deployment "stack-grafana" successfully rolled out
+
+# 17:27:22 UTC
+$ kubectl get pods -n monitoring
+NAME                                               READY   STATUS      RESTARTS   AGE
+stack-grafana-967cdfb64-6464v                      3/3     Running     0          4m9s
+stack-kube-state-metrics-f8df5896c-j9mlt           1/1     Running     0          4m9s
+stack-prometheus-node-exporter-8mvmh               1/1     Running     0          4m9s
+stack-sync-job-dd9vj                               0/1     Completed   0          4m8s
+stack-victoria-metrics-operator-566fd744c4-pn9xx   1/1     Running     0          4m9s
+vlagent-stack-j9mj9                                1/1     Running     0          3m30s
+vlsingle-stack-79b6bb6f44-vknvz                    1/1     Running     0          3m25s
+vmagent-stack-9cb5cd47f-vj7xq                      2/2     Running     0          3m29s
+vmalert-stack-7d65c4966-ms5b2                      2/2     Running     0          3m30s
+vmalertmanager-stack-0                             2/2     Running     0          3m30s
+vmauth-stack-559ffb4649-hnxxf                      2/2     Running     0          3m30s
+vmauth-stack-internal-5476f786f9-65s8v             2/2     Running     0          3m30s
+vmsingle-stack-746794f864-l9zx9                    1/1     Running     0          3m30s
+vtsingle-stack-65b657f49f-jjdzg                    1/1     Running     0          3m25s
+
+# 17:27:22 UTC
+$ kubectl get svc -n monitoring vmauth-stack
+NAME           TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+vmauth-stack   ClusterIP   10.96.11.210   <none>        8427/TCP   3m30s
+
+## 17:27:22 UTC  the port-forward runs in a second terminal on page 45; here it runs in the background, and these are its first lines
+
+# 17:27:22 UTC
+$ kubectl port-forward -n monitoring svc/vmauth-stack 8427:8427
+Forwarding from 127.0.0.1:8427 -> 8427
+Forwarding from [::1]:8427 -> 8427
+
+# 17:27:26 UTC
+$ .venv/bin/python stack.py start
+Started inventory  http://127.0.0.1:8081, sending to http://127.0.0.1:8427
+Started checkout   http://127.0.0.1:8080, sending to http://127.0.0.1:8427
+Started vmagent    http://127.0.0.1:8429, sending to http://127.0.0.1:8427
+
+## 17:27:28 UTC  record_stack.py: one checkout, then v1, v2, v2.1, then every query through http://127.0.0.1:8427
+
+Checkout now runs v1. Sending 60 checkouts, two per second.
+Done: 60 checkouts, 60 accepted, 0 failed.
+Traffic ran from 17:27:28 to 17:27:58 UTC on 22 Nov 2026.
+Checkout now runs v2. Sending 60 checkouts, two per second.
+Done: 60 checkouts, 60 accepted, 0 failed.
+Traffic ran from 17:28:13 to 17:28:43 UTC on 22 Nov 2026.
+Checkout now runs v2.1. Sending 60 checkouts, two per second.
+Done: 60 checkouts, 60 accepted, 0 failed.
+Traffic ran from 17:28:58 to 17:29:27 UTC on 22 Nov 2026.
+waiting 75 s for the stack's databases to show the newest data
+{
+ "first_checkout_log_records": 8,
+ "interfaces": {
+  "metrics": {
+   "url": "http://127.0.0.1:8427/metrics/select/vmui/",
+   "http_status": 200
+  },
+  "logs": {
+   "url": "http://127.0.0.1:8427/logs/select/vmui/",
+   "http_status": 200
+  },
+  "traces": {
+   "url": "http://127.0.0.1:8427/traces/select/vmui/",
+   "http_status": 200
+  }
+ }
+}
+{"version": "v1", "started_utc": "2026-11-22T17:27:28.952+00:00", "ended_utc": "2026-11-22T17:27:58.510+00:00", "requests": 60, "accepted": 60, "failed": 0, "client_mean_ms": 58.0, "client_p95_ms": 70.057, "checkout_rate": 2.0, "checkout_p95_seconds": 0.0736111111111111, "inventory_rate": 2.0, "inventory_p95_seconds": 0.07142857142857142, "calls_per_checkout": 1.0, "traces_found": 60, "traces_200ms_or_slower": 0, "checkouts_by_lookup_scope": {"request": 60}}
+{"version": "v2", "started_utc": "2026-11-22T17:28:13.524+00:00", "ended_utc": "2026-11-22T17:28:43.400+00:00", "requests": 60, "accepted": 60, "failed": 0, "client_mean_ms": 313.0, "client_p95_ms": 352.716, "checkout_rate": 2.0, "checkout_p95_seconds": 0.3888888888888889, "inventory_rate": 12.0, "inventory_p95_seconds": 0.06428571428571428, "calls_per_checkout": 5.95, "traces_found": 60, "traces_200ms_or_slower": 60, "checkouts_by_lookup_scope": {"line": 60}, "example_trace_id": "e6ad0872b99641e2a4e9877aa33609cc", "example_trace_span_count": 13, "example_root_duration_ms": 300.0, "example_decisions": ["line-1 line fetch", "line-2 line fetch", "line-3 line fetch", "line-4 line fetch", "line-5 line fetch", "line-6 line fetch"]}
+{"version": "v2.1", "started_utc": "2026-11-22T17:28:58.433+00:00", "ended_utc": "2026-11-22T17:29:27.998+00:00", "requests": 60, "accepted": 60, "failed": 0, "client_mean_ms": 67.1, "client_p95_ms": 97.62, "checkout_rate": 2.0, "checkout_p95_seconds": 0.07307692307692307, "inventory_rate": 2.0, "inventory_p95_seconds": 0.06999999999999999, "calls_per_checkout": 1.0, "traces_found": 60, "traces_200ms_or_slower": 0, "checkouts_by_lookup_scope": {"request": 60}}
+
+# 17:30:44 UTC
+$ curl -s http://127.0.0.1:8427/logs/select/logsql/query --data-urlencode 'query=service:=checkout event:=inventory_lookup_decision | stats by (lookup_scope) count_uniq(trace_id) as checkouts'
+{"lookup_scope":"request","checkouts":"121"}
+{"lookup_scope":"line","checkouts":"60"}
+
+# 17:30:44 UTC
+$ .venv/bin/python stack.py stop
+Stopped vmagent
+Stopped checkout
+Stopped inventory
+
+## 17:30:45 UTC  port-forward stopped
+
+# 17:30:45 UTC
+$ kubectl get pods -n monitoring -o jsonpath='{range .items[*]}{range .spec.containers[*]}{.image}{"\n"}{end}{end}' | sort -u
+docker.io/grafana/grafana:13.2.3-distroless
+ghcr.io/victoriametrics/sync-job:v0.0.18
+prom/alertmanager:v0.34.2
+quay.io/kiwigrid/k8s-sidecar:2.11.2
+quay.io/prometheus/node-exporter:v1.12.1
+registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.20.0
+victoriametrics/operator:config-reloader-v0.75.2
+victoriametrics/operator:v0.75.2
+victoriametrics/victoria-logs:v1.53.0
+victoriametrics/victoria-metrics:v1.156.0
+victoriametrics/victoria-traces:v0.13.0
+victoriametrics/vlagent:v1.53.0
+victoriametrics/vmagent:v1.156.0
+victoriametrics/vmalert:v1.156.0
+victoriametrics/vmauth:v1.156.0
+
+# 17:30:45 UTC
+$ kubectl version 2>/dev/null | grep -E 'Server|Client'
+Client Version: v1.34.1
+Server Version: v1.36.1
+
+# 17:30:45 UTC
+$ kind delete cluster --name btd-bookshop
+Deleting cluster "btd-bookshop" ...
+Deleted nodes: ["btd-bookshop-control-plane"]
+
+## 17:30:49 UTC  done
+

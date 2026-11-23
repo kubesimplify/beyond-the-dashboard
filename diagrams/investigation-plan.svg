@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="286" viewBox="0 0 900 286">
+<title>investigation plan</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<rect x="10" y="20" width="200" height="250" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="9.9,20.6 211.1,20.7 211.0,270.6 10.4,270.4 9.4,20.8" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="9.1,19.0 211.3,21.3 210.1,269.9 10.7,269.3 9.7,18.7" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="41.0" cy="49.0" rx="19.0" ry="19.0" fill="#FFFEFA" stroke="#16796F" stroke-width="2"/>
+<text x="41" y="52.849999999999994" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="middle">
+<tspan x="41" dy="0">1</tspan>
+</text>
+<text x="110" y="99.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="110" dy="0">Pattern</tspan>
+</text>
+<text x="110" y="136.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#263D3B" text-anchor="middle">
+<tspan x="110" dy="0">What changed, when,</tspan>
+<tspan x="110" dy="21.25">and how widely?</tspan>
+</text>
+<text x="110" y="222.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="middle">
+<tspan x="110" dy="0">metrics</tspan>
+</text>
+<polyline points="214,145 230,145" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="220.09508187412055" y1="149.78462087522354" x2="230" y2="145" stroke="#16796F" stroke-width="2.4"/>
+<line x1="220.09508187412055" y1="140.21537912477646" x2="230" y2="145" stroke="#16796F" stroke-width="2.4"/>
+<rect x="234" y="20" width="200" height="250" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="235.5,19.4 433.5,20.8 433.1,270.3 235.6,271.2 234.5,20.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="233.9,20.4 432.7,20.6 435.6,269.9 233.2,269.0 234.3,18.9" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="265.0" cy="49.0" rx="19.0" ry="19.0" fill="#FFFEFA" stroke="#16796F" stroke-width="2"/>
+<text x="265" y="52.849999999999994" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="middle">
+<tspan x="265" dy="0">2</tspan>
+</text>
+<text x="334" y="99.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="334" dy="0">Execution</tspan>
+</text>
+<text x="334" y="136.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#263D3B" text-anchor="middle">
+<tspan x="334" dy="0">Where does one</tspan>
+<tspan x="334" dy="21.25">request spend</tspan>
+<tspan x="334" dy="21.25">its time?</tspan>
+</text>
+<text x="334" y="222.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="middle">
+<tspan x="334" dy="0">a trace</tspan>
+</text>
+<polyline points="438,145 454,145" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="444.0950818741206" y1="149.78462087522354" x2="454" y2="145" stroke="#16796F" stroke-width="2.4"/>
+<line x1="444.0950818741206" y1="140.21537912477646" x2="454" y2="145" stroke="#16796F" stroke-width="2.4"/>
+<rect x="458" y="20" width="200" height="250" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="457.5,18.6 657.1,21.6 657.0,268.8 458.3,270.4 457.9,19.0" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="457.8,20.7 658.6,18.7 658.1,270.7 459.2,268.5 457.0,21.0" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="489.0" cy="49.0" rx="19.0" ry="19.0" fill="#FFFEFA" stroke="#16796F" stroke-width="2"/>
+<text x="489" y="52.849999999999994" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="middle">
+<tspan x="489" dy="0">3</tspan>
+</text>
+<text x="558" y="99.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="558" dy="0">Explanation</tspan>
+</text>
+<text x="558" y="136.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#263D3B" text-anchor="middle">
+<tspan x="558" dy="0">What did the</tspan>
+<tspan x="558" dy="21.25">code decide?</tspan>
+</text>
+<text x="558" y="222.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="middle">
+<tspan x="558" dy="0">logs linked</tspan>
+<tspan x="558" dy="21.25">to the trace</tspan>
+</text>
+<polyline points="662,145 678,145" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="668.0950818741205" y1="149.78462087522354" x2="678" y2="145" stroke="#16796F" stroke-width="2.4"/>
+<line x1="668.0950818741205" y1="140.21537912477646" x2="678" y2="145" stroke="#16796F" stroke-width="2.4"/>
+<rect x="682" y="20" width="200" height="250" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="682.3,21.3 882.6,19.2 883.3,270.4 681.3,271.5 683.1,18.9" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="680.8,19.4 883.2,20.0 882.4,270.0 682.9,269.3 680.6,19.9" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="713.0" cy="49.0" rx="19.0" ry="19.0" fill="#FFFEFA" stroke="#16796F" stroke-width="2"/>
+<text x="713" y="52.849999999999994" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="middle">
+<tspan x="713" dy="0">4</tspan>
+</text>
+<text x="782" y="99.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="782" dy="0">Verification</tspan>
+</text>
+<text x="782" y="136.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#263D3B" text-anchor="middle">
+<tspan x="782" dy="0">Is it fixed, and</tspan>
+<tspan x="782" dy="21.25">is the answer</tspan>
+<tspan x="782" dy="21.25">still right?</tspan>
+</text>
+<text x="782" y="222.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="middle">
+<tspan x="782" dy="0">all signals</tspan>
+<tspan x="782" dy="21.25">and tests</tspan>
+</text>
+</svg>

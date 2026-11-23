@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410">
+<title>metrics cluster</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<rect x="20" y="30" width="210" height="80" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="19.2,30.6 230.7,31.4 231.5,110.4 19.1,108.9 20.6,30.2" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="19.4,30.0 228.6,30.1 228.8,110.5 20.7,108.7 20.2,28.5" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="125" y="59.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="125" dy="0">vmagent</tspan>
+</text>
+<text x="125" y="88.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="125" dy="0">sends samples</tspan>
+</text>
+<polyline points="234,70 334,70" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="324.0950818741206" y1="74.78462087522354" x2="334" y2="70" stroke="#16796F" stroke-width="2.4"/>
+<line x1="324.0950818741206" y1="65.21537912477646" x2="334" y2="70" stroke="#16796F" stroke-width="2.4"/>
+<rect x="340" y="30" width="220" height="80" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="340.9,30.9 559.3,30.7 560.1,110.7 339.0,111.1 341.0,28.4" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="339.7,29.2 558.5,31.2 560.2,111.6 339.4,110.8 340.7,29.4" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="450" y="59.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="450" dy="0">vminsert</tspan>
+</text>
+<text x="450" y="88.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="450" dy="0">spreads writes</tspan>
+</text>
+<polyline points="450,112 210,180" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="218.22548649206155" y1="172.69648221957988" x2="210" y2="180" stroke="#16796F" stroke-width="2.4"/>
+<line x1="220.83408640968702" y1="181.90330545825802" x2="210" y2="180" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="450,112 450,180" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="445.21537912477646" y1="170.09508187412055" x2="450" y2="180" stroke="#16796F" stroke-width="2.4"/>
+<line x1="454.78462087522354" y1="170.09508187412055" x2="450" y2="180" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="450,112 690,180" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="679.1659135903129" y1="181.90330545825802" x2="690" y2="180" stroke="#16796F" stroke-width="2.4"/>
+<line x1="681.7745135079384" y1="172.69648221957988" x2="690" y2="180" stroke="#16796F" stroke-width="2.4"/>
+<text x="620" y="139.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#16796F" text-anchor="start">
+<tspan x="620" dy="0">writes</tspan>
+</text>
+<rect x="110" y="186" width="200" height="70" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="109.3,186.2 309.8,185.7 310.4,254.9 109.1,256.6 111.6,187.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="110.6,186.3 308.7,186.4 309.8,255.8 109.5,257.5 110.7,184.8" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="210" y="212.7" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" fill="#263D3B" text-anchor="middle">
+<tspan x="210" dy="0">vmstorage</tspan>
+</text>
+<text x="210" y="240.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="210" dy="0">node 1</tspan>
+</text>
+<rect x="350" y="186" width="200" height="70" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="348.7,184.5 550.5,187.0 550.1,254.7 350.3,256.9 350.2,186.8" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="350.8,186.8 550.2,187.5 549.5,256.5 349.2,256.7 350.7,184.4" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="450" y="212.7" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" fill="#263D3B" text-anchor="middle">
+<tspan x="450" dy="0">vmstorage</tspan>
+</text>
+<text x="450" y="240.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="450" dy="0">node 2</tspan>
+</text>
+<rect x="590" y="186" width="200" height="70" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="591.5,185.9 791.5,184.7 791.4,257.5 591.1,257.4 589.3,185.2" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="589.5,184.5 789.9,186.3 788.7,256.8 589.3,256.2 588.8,187.6" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="690" y="212.7" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" fill="#263D3B" text-anchor="middle">
+<tspan x="690" dy="0">vmstorage</tspan>
+</text>
+<text x="690" y="240.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="690" dy="0">node 3</tspan>
+</text>
+<polyline points="210,258 410,322" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="399.10808049471797" y1="323.5382098330385" x2="410" y2="322" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="402.0245531070423" y1="314.4242329195248" x2="410" y2="322" stroke="#263D3B" stroke-width="2.4"/>
+<polyline points="450,258 450,322" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="445.21537912477646" y1="312.0950818741206" x2="450" y2="322" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="454.78462087522354" y1="312.0950818741206" x2="450" y2="322" stroke="#263D3B" stroke-width="2.4"/>
+<polyline points="690,258 490,322" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="497.9754468929577" y1="314.4242329195248" x2="490" y2="322" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="500.89191950528203" y1="323.5382098330385" x2="490" y2="322" stroke="#263D3B" stroke-width="2.4"/>
+<text x="682" y="291.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="start">
+<tspan x="682" dy="0">fetch</tspan>
+</text>
+<rect x="340" y="328" width="220" height="72" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="338.6,327.5 559.4,327.1 560.6,398.6 339.1,399.8 340.8,329.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="339.8,326.6 558.8,328.7 560.2,398.8 339.2,400.9 340.7,327.5" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="450" y="355.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="450" dy="0">vmselect</tspan>
+</text>
+<text x="450" y="382.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="450" dy="0">fetches + calculates</tspan>
+</text>
+<polyline points="564,364 664,364" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="654.0950818741205" y1="368.78462087522354" x2="664" y2="364" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="654.0950818741205" y1="359.21537912477646" x2="664" y2="364" stroke="#263D3B" stroke-width="2.4"/>
+<text x="614" y="350.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#263D3B" text-anchor="middle">
+<tspan x="614" dy="0">results</tspan>
+</text>
+<rect x="670" y="328" width="210" height="72" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="671.3,328.0 879.9,328.2 880.9,399.0 668.9,401.1 669.0,328.0" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="671.2,327.8 878.5,328.8 880.3,400.1 668.6,400.1 668.4,327.2" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="775" y="354.7" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" fill="#263D3B" text-anchor="middle">
+<tspan x="775" dy="0">Your query</tspan>
+</text>
+<text x="775" y="382.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="775" dy="0">VMUI or Grafana</tspan>
+</text>
+</svg>

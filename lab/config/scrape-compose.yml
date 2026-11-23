@@ -1,0 +1,10 @@
+# The Compose version of scrape.yml: targets are service names on the Compose network.
+global:
+  scrape_interval: 2s
+scrape_configs:
+  - job_name: book-lab
+    static_configs:
+      - targets: ['checkout:8080', 'inventory:8081']
+  - job_name: telemetry-backends
+    static_configs:
+      - targets: ['metrics:8428', 'logs:9428', 'traces:10428', 'vmagent:8429', 'vmalert:8880']

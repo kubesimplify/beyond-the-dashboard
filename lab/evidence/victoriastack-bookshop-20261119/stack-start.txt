@@ -1,0 +1,4 @@
+$ .venv/bin/python stack.py start
+Started inventory  http://127.0.0.1:8081, sending to http://127.0.0.1:8427
+Started checkout   http://127.0.0.1:8080, sending to http://127.0.0.1:8427
+Started vmagent    http://127.0.0.1:8429, sending to http://127.0.0.1:8427

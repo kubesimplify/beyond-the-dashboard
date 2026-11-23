@@ -1,0 +1,58 @@
+name: beyond-the-dashboard
+# The same seven processes as control.py start, on the same localhost ports.
+services:
+  metrics:
+    image: victoriametrics/victoria-metrics:v1.153.0
+    command: ['-storageDataPath=/data', '-retentionPeriod=7d']
+    ports: ['127.0.0.1:8428:8428']
+    volumes: ['metrics-data:/data']
+  logs:
+    image: victoriametrics/victoria-logs:v1.53.0
+    command: ['-storageDataPath=/data', '-retentionPeriod=7d']
+    ports: ['127.0.0.1:9428:9428']
+    volumes: ['logs-data:/data']
+  traces:
+    image: victoriametrics/victoria-traces:v0.12.0
+    environment:
+      TZ: UTC
+    command: ['-storageDataPath=/data', '-retentionPeriod=7d', '-insert.indexFlushInterval=1s']
+    ports: ['127.0.0.1:10428:10428']
+    volumes: ['traces-data:/data']
+  vmagent:
+    image: victoriametrics/vmagent:v1.153.0
+    command: ['-promscrape.config=/etc/scrape.yml', '-remoteWrite.url=http://metrics:8428/api/v1/write', '-remoteWrite.tmpDataPath=/data']
+    ports: ['127.0.0.1:8429:8429']
+    volumes: ['./config/scrape-compose.yml:/etc/scrape.yml:ro', 'vmagent-data:/data']
+    depends_on: [metrics]
+  vmalert:
+    image: victoriametrics/vmalert:v1.153.0
+    command: ['-rule=/etc/alerts.yml', '-datasource.url=http://metrics:8428', '-remoteWrite.url=http://metrics:8428', '-notifier.blackhole']
+    ports: ['127.0.0.1:8880:8880']
+    volumes: ['./config/alerts.yml:/etc/alerts.yml:ro']
+    depends_on: [metrics]
+  checkout:
+    build: .
+    environment:
+      SERVICE: checkout
+      PORT: '8080'
+      BIND_HOST: 0.0.0.0
+      INVENTORY_URL: http://inventory:8081
+      LOG_URL: http://logs:9428
+      TRACE_URL: http://traces:10428
+    ports: ['127.0.0.1:8080:8080']
+    depends_on: [inventory, logs, traces]
+  inventory:
+    build: .
+    environment:
+      SERVICE: inventory
+      PORT: '8081'
+      BIND_HOST: 0.0.0.0
+      LOG_URL: http://logs:9428
+      TRACE_URL: http://traces:10428
+    ports: ['127.0.0.1:8081:8081']
+    depends_on: [logs, traces]
+volumes:
+  metrics-data:
+  logs-data:
+  traces-data:
+  vmagent-data:

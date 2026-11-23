@@ -1,0 +1,32 @@
+{
+  "first_checkout_to_v2": {
+    "query": "service:=checkout event:=inventory_lookup_decision | stats by (lookup_scope) count_uniq(trace_id) as checkouts",
+    "start": "2026-10-16T16:26:58.206+00:00",
+    "end": "2026-10-16T16:28:19.213+00:00",
+    "result": [
+      {
+        "lookup_scope": "request",
+        "checkouts": "61"
+      },
+      {
+        "lookup_scope": "line",
+        "checkouts": "60"
+      }
+    ]
+  },
+  "first_checkout_to_v2_1": {
+    "query": "service:=checkout event:=inventory_lookup_decision | stats by (lookup_scope) count_uniq(trace_id) as checkouts",
+    "start": "2026-10-16T16:26:58.206+00:00",
+    "end": "2026-10-16T16:29:14.158+00:00",
+    "result": [
+      {
+        "lookup_scope": "request",
+        "checkouts": "121"
+      },
+      {
+        "lookup_scope": "line",
+        "checkouts": "60"
+      }
+    ]
+  }
+}

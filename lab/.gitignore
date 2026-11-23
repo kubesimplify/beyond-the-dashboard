@@ -1,0 +1,10 @@
+.venv/
+.cache/
+.runtime/
+__pycache__/
+
+# Runs you make yourself. The runs used in the book stay tracked.
+evidence/*
+!evidence/book-lab-6-20261016/
+!evidence/victoriastack-bookshop-20261119/
+!evidence/slow-inventory-20261119/

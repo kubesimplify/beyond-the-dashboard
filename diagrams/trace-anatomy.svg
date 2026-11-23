@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="306" viewBox="0 0 900 306">
+<title>trace anatomy</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<text x="35" y="32.95" font-family="Lato, Helvetica, Arial, sans-serif" font-size="27" fill="#16796F" text-anchor="start">
+<tspan x="35" dy="0">One trace ID</tspan>
+</text>
+<polyline points="206,31 848,31" fill="none" stroke="#657572" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="838.0950818741205" y1="35.78462087522353" x2="848" y2="31" stroke="#657572" stroke-width="2.4"/>
+<line x1="838.0950818741205" y1="26.21537912477647" x2="848" y2="31" stroke="#657572" stroke-width="2.4"/>
+<text x="786" y="18.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#657572" text-anchor="start">
+<tspan x="786" dy="0">time</tspan>
+</text>
+<text x="32" y="106.4" font-family="Lato, Helvetica, Arial, sans-serif" font-size="24" fill="#263D3B" text-anchor="start">
+<tspan x="32" dy="0">parent</tspan>
+</text>
+<rect x="220" y="76" width="610" height="48" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="220.1,76.8 830.2,76.3 830.5,123.9 219.8,122.7 221.1,76.0" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="220.7,77.6 829.6,75.3 829.2,125.1 220.0,125.5 221.4,75.6" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="235" y="107.25" font-family="Lato, Helvetica, Arial, sans-serif" font-size="25" fill="#263D3B" text-anchor="start">
+<tspan x="235" dy="0">checkout</tspan>
+</text>
+<text x="32" y="188.4" font-family="Lato, Helvetica, Arial, sans-serif" font-size="24" fill="#263D3B" text-anchor="start">
+<tspan x="32" dy="0">child</tspan>
+</text>
+<rect x="256" y="158" width="213" height="48" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="257.0,159.6 468.0,159.1 470.0,205.6 255.0,207.1 254.7,156.7" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="254.9,157.8 467.9,158.0 467.9,204.8 257.1,206.8 257.4,159.2" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="271" y="189.25" font-family="Lato, Helvetica, Arial, sans-serif" font-size="25" fill="#263D3B" text-anchor="start">
+<tspan x="271" dy="0">inventory call</tspan>
+</text>
+<text x="32" y="268.4" font-family="Lato, Helvetica, Arial, sans-serif" font-size="24" fill="#263D3B" text-anchor="start">
+<tspan x="32" dy="0">child</tspan>
+</text>
+<rect x="491" y="238" width="244" height="48" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="491.8,238.2 735.9,237.2 735.3,285.2 489.5,287.4 490.4,237.0" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="490.7,239.4 735.3,239.2 735.2,285.6 492.5,284.8 491.6,236.6" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="506" y="269.25" font-family="Lato, Helvetica, Arial, sans-serif" font-size="25" fill="#263D3B" text-anchor="start">
+<tspan x="506" dy="0">inventory call</tspan>
+</text>
+<polyline points="209,124 209,262 480,262" fill="none" stroke="#657572" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+<polyline points="209,182 247,182" fill="none" stroke="#657572" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+</svg>

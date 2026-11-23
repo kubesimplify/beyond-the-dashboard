@@ -1,0 +1,38 @@
+# recorded 2026-11-19 07:27:06 UTC
+$ git clone https://github.com/VictoriaMetrics/VictoriaStack.git && cd VictoriaStack
+
+$ git log -1 --format='%h %ad %s' --date=short
+5c1df0b 2026-11-17 deployment: bump vm/vl/vt versions
+
+$ make otel-single-up
+docker compose \
+	-f deployment/otel-single-node.yml \
+ 	-f deployment/otel-demo-mini.yml \
+ 	up -d
+ Container deployment-rules-metrics-1 Started 
+ Container deployment-otelcol-1 Started 
+ Container deployment-rules-logs-1 Started 
+ Container deployment-quote-1 Started 
+ Container deployment-flagd-1 Started 
+ Container deployment-vmstack-1 Started 
+ Container deployment-victoriametrics-1 Started 
+ Container deployment-victorialogs-1 Started 
+ Container deployment-victoriatraces-1 Started 
+ Container deployment-grafana-1 Started 
+ Container deployment-shipping-1 Started 
+ Container deployment-traffic-1 Started 
+
+$ docker compose -f deployment/otel-single-node.yml -f deployment/otel-demo-mini.yml ps --format 'table {{.Name}}\t{{.Image}}\t{{.Status}}'
+NAME                           IMAGE                                         STATUS
+deployment-flagd-1             ghcr.io/open-feature/flagd:v0.16.0            Up 1 second
+deployment-grafana-1           grafana/grafana:latest                        Up 1 second
+deployment-otelcol-1           otel/opentelemetry-collector-contrib:latest   Up 1 second
+deployment-quote-1             ghcr.io/open-telemetry/demo:3.0.0-quote       Up 1 second
+deployment-rules-logs-1        victoriametrics/vmalert:v1.156.0              Up 1 second
+deployment-rules-metrics-1     victoriametrics/vmalert:v1.156.0              Up 1 second
+deployment-shipping-1          ghcr.io/open-telemetry/demo:3.0.0-shipping    Up Less than a second
+deployment-traffic-1           curlimages/curl:8.12.1                        Up Less than a second
+deployment-victorialogs-1      victoriametrics/victoria-logs:v1.54.0         Up 1 second
+deployment-victoriametrics-1   victoriametrics/victoria-metrics:v1.156.0     Up 1 second
+deployment-victoriatraces-1    victoriametrics/victoria-traces:v0.13.0       Up 1 second
+deployment-vmstack-1           victoriametrics/vmauth:v1.156.0               Up 1 second

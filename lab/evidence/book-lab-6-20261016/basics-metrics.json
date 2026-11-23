@@ -1,0 +1,241 @@
+{
+  "note": "The first queries in VMUI. The selector is read once v1 has finished; the rates during v1, at the same time as healthy-metrics.json.",
+  "selector_after_v1": {
+    "query": "app_http_requests_total{service=\"checkout\"}",
+    "time_unix": 1792168059.349942,
+    "time_utc": "2026-10-16T16:27:39.349+00:00",
+    "result": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "app_http_requests_total",
+              "instance": "127.0.0.1:8080",
+              "job": "book-lab",
+              "route": "/checkout",
+              "service": "checkout",
+              "status": "200"
+            },
+            "value": [
+              1792168059.35,
+              "61"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "app_http_requests_total",
+              "instance": "127.0.0.1:8080",
+              "job": "book-lab",
+              "route": "/checkout",
+              "service": "checkout",
+              "status": "400"
+            },
+            "value": [
+              1792168059.35,
+              "0"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "app_http_requests_total",
+              "instance": "127.0.0.1:8080",
+              "job": "book-lab",
+              "route": "/checkout",
+              "service": "checkout",
+              "status": "500"
+            },
+            "value": [
+              1792168059.35,
+              "0"
+            ]
+          }
+        ]
+      },
+      "stats": {
+        "seriesFetched": "3",
+        "executionTimeMsec": 0
+      }
+    }
+  },
+  "time_unix": 1792168048.349942,
+  "time_utc": "2026-10-16T16:27:28.349+00:00",
+  "queries": {
+    "selector": {
+      "query": "app_http_requests_total{service=\"checkout\"}",
+      "result": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {
+                "__name__": "app_http_requests_total",
+                "instance": "127.0.0.1:8080",
+                "job": "book-lab",
+                "route": "/checkout",
+                "service": "checkout",
+                "status": "200"
+              },
+              "value": [
+                1792168048.35,
+                "50"
+              ]
+            },
+            {
+              "metric": {
+                "__name__": "app_http_requests_total",
+                "instance": "127.0.0.1:8080",
+                "job": "book-lab",
+                "route": "/checkout",
+                "service": "checkout",
+                "status": "400"
+              },
+              "value": [
+                1792168048.35,
+                "0"
+              ]
+            },
+            {
+              "metric": {
+                "__name__": "app_http_requests_total",
+                "instance": "127.0.0.1:8080",
+                "job": "book-lab",
+                "route": "/checkout",
+                "service": "checkout",
+                "status": "500"
+              },
+              "value": [
+                1792168048.35,
+                "0"
+              ]
+            }
+          ]
+        },
+        "stats": {
+          "seriesFetched": "3",
+          "executionTimeMsec": 0
+        }
+      }
+    },
+    "rate": {
+      "query": "rate(app_http_requests_total{service=\"checkout\"}[10s])",
+      "result": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {
+                "instance": "127.0.0.1:8080",
+                "job": "book-lab",
+                "route": "/checkout",
+                "service": "checkout",
+                "status": "200"
+              },
+              "value": [
+                1792168048.35,
+                "2"
+              ]
+            },
+            {
+              "metric": {
+                "instance": "127.0.0.1:8080",
+                "job": "book-lab",
+                "route": "/checkout",
+                "service": "checkout",
+                "status": "400"
+              },
+              "value": [
+                1792168048.35,
+                "0"
+              ]
+            },
+            {
+              "metric": {
+                "instance": "127.0.0.1:8080",
+                "job": "book-lab",
+                "route": "/checkout",
+                "service": "checkout",
+                "status": "500"
+              },
+              "value": [
+                1792168048.35,
+                "0"
+              ]
+            }
+          ]
+        },
+        "stats": {
+          "seriesFetched": "3",
+          "executionTimeMsec": 0
+        }
+      }
+    },
+    "sum_rate": {
+      "query": "sum(rate(app_http_requests_total{service=\"checkout\"}[10s]))",
+      "result": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {},
+              "value": [
+                1792168048.35,
+                "2"
+              ]
+            }
+          ]
+        },
+        "stats": {
+          "seriesFetched": "3",
+          "executionTimeMsec": 0
+        }
+      }
+    },
+    "sum_by_status": {
+      "query": "sum by (status) (rate(app_http_requests_total{service=\"checkout\"}[10s]))",
+      "result": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {
+                "status": "200"
+              },
+              "value": [
+                1792168048.35,
+                "2"
+              ]
+            },
+            {
+              "metric": {
+                "status": "400"
+              },
+              "value": [
+                1792168048.35,
+                "0"
+              ]
+            },
+            {
+              "metric": {
+                "status": "500"
+              },
+              "value": [
+                1792168048.35,
+                "0"
+              ]
+            }
+          ]
+        },
+        "stats": {
+          "seriesFetched": "3",
+          "executionTimeMsec": 0
+        }
+      }
+    }
+  }
+}

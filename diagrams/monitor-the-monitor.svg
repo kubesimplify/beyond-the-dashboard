@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240">
+<title>monitor the monitor</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<rect x="10" y="40" width="184" height="92" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="10.3,41.2 194.6,38.7 194.2,131.1 9.5,131.0 10.8,39.7" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.4,40.2 195.6,39.6 193.2,131.1 10.2,130.8 11.0,40.9" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="102" y="90.4" font-family="Lato, Helvetica, Arial, sans-serif" font-size="24" fill="#263D3B" text-anchor="middle">
+<tspan x="102" dy="0">App</tspan>
+</text>
+<rect x="242" y="40" width="184" height="92" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="242.6,41.5 425.9,39.6 425.0,130.5 241.6,133.0 243.1,39.8" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="241.4,41.4 426.4,40.9 427.3,132.9 242.9,131.2 242.9,40.4" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="334" y="90.4" font-family="Lato, Helvetica, Arial, sans-serif" font-size="24" fill="#263D3B" text-anchor="middle">
+<tspan x="334" dy="0">vmagent</tspan>
+</text>
+<rect x="474" y="40" width="184" height="92" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="474.3,41.5 659.6,41.6 656.4,131.4 474.2,130.5 475.0,39.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="473.2,38.6 659.2,40.5 659.4,133.2 474.1,132.4 473.6,40.0" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="566" y="88.7" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" fill="#263D3B" text-anchor="middle">
+<tspan x="566" dy="0">VictoriaMetrics</tspan>
+</text>
+<rect x="706" y="40" width="184" height="92" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="707.4,39.1 890.6,39.4 891.1,132.9 706.8,132.6 705.2,40.1" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="707.5,38.6 888.6,41.0 890.7,131.4 707.2,132.3 704.4,39.6" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="798" y="90.4" font-family="Lato, Helvetica, Arial, sans-serif" font-size="24" fill="#263D3B" text-anchor="middle">
+<tspan x="798" dy="0">Query</tspan>
+</text>
+<polyline points="238,66 198,66" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+<line x1="207.90491812587945" y1="61.21537912477646" x2="198" y2="66" stroke="#16796F" stroke-width="2.4"/>
+<line x1="207.90491812587945" y1="70.78462087522354" x2="198" y2="66" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="198,108 238,108" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="228.09508187412055" y1="112.78462087522354" x2="238" y2="108" stroke="#16796F" stroke-width="2.4"/>
+<line x1="228.09508187412055" y1="103.21537912477646" x2="238" y2="108" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="430,86 470,86" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="460.0950818741206" y1="90.78462087522354" x2="470" y2="86" stroke="#16796F" stroke-width="2.4"/>
+<line x1="460.0950818741206" y1="81.21537912477646" x2="470" y2="86" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="662,86 702,86" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="692.0950818741205" y1="90.78462087522354" x2="702" y2="86" stroke="#16796F" stroke-width="2.4"/>
+<line x1="692.0950818741205" y1="81.21537912477646" x2="702" y2="86" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="102,138 102,170" fill="none" stroke="#657572" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="102" y="194.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#263D3B" text-anchor="middle">
+<tspan x="102" dy="0">serving</tspan>
+<tspan x="102" dy="23.75">/metrics?</tspan>
+</text>
+<polyline points="334,138 334,170" fill="none" stroke="#657572" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="334" y="194.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#263D3B" text-anchor="middle">
+<tspan x="334" dy="0">scrape up?</tspan>
+</text>
+<polyline points="566,138 566,170" fill="none" stroke="#657572" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="566" y="194.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#263D3B" text-anchor="middle">
+<tspan x="566" dy="0">samples</tspan>
+<tspan x="566" dy="23.75">stored?</tspan>
+</text>
+<polyline points="798,138 798,170" fill="none" stroke="#657572" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="798" y="194.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#263D3B" text-anchor="middle">
+<tspan x="798" dy="0">result in</tspan>
+<tspan x="798" dy="23.75">the window?</tspan>
+</text>
+</svg>

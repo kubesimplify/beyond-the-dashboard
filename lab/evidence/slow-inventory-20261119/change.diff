@@ -1,0 +1,4 @@
+1c1
+<                 time.sleep(.04)  # Fixed teaching workload, not a product benchmark.
+---
+>                 time.sleep(.3)  # Exercise: inventory itself is slower, not a product benchmark.

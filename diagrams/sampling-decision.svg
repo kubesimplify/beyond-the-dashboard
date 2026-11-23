@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="412" viewBox="0 0 900 412">
+<title>sampling decision</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<text x="130" y="23.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#16796F" text-anchor="middle">
+<tspan x="130" dy="0">head decision here</tspan>
+</text>
+<polyline points="130,32 130,60" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="125.21537912477646" y1="50.09508187412055" x2="130" y2="60" stroke="#16796F" stroke-width="2.4"/>
+<line x1="134.78462087522354" y1="50.09508187412055" x2="130" y2="60" stroke="#16796F" stroke-width="2.4"/>
+<text x="770" y="23.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#16796F" text-anchor="middle">
+<tspan x="770" dy="0">tail decision here</tspan>
+</text>
+<polyline points="770,32 770,60" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="765.2153791247765" y1="50.09508187412055" x2="770" y2="60" stroke="#16796F" stroke-width="2.4"/>
+<line x1="774.7846208752235" y1="50.09508187412055" x2="770" y2="60" stroke="#16796F" stroke-width="2.4"/>
+<rect x="20" y="66" width="220" height="84" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="21.4,66.6 238.8,65.3 238.9,150.9 20.3,150.3 19.8,67.2" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="21.3,67.3 240.0,64.6 240.5,148.7 21.5,151.6 18.4,66.2" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="130" y="91.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="middle">
+<tspan x="130" dy="0">Request starts</tspan>
+</text>
+<text x="130" y="125.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#657572" text-anchor="middle">
+<tspan x="130" dy="0">root span begins</tspan>
+</text>
+<rect x="340" y="66" width="220" height="84" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="341.2,66.5 560.3,67.0 561.2,149.9 338.6,151.0 338.5,67.1" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="339.6,67.5 560.8,67.1 559.9,150.4 339.8,149.2 339.7,66.7" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="450" y="91.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="middle">
+<tspan x="450" dy="0">Work runs</tspan>
+</text>
+<text x="450" y="125.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#657572" text-anchor="middle">
+<tspan x="450" dy="0">spans end, export</tspan>
+</text>
+<rect x="660" y="66" width="220" height="84" rx="8" fill="#FBEDD7" stroke="none"/>
+<polyline points="658.6,66.5 880.4,65.4 881.5,148.9 660.0,148.8 661.4,66.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="659.7,67.2 878.6,65.2 881.4,149.4 659.1,148.9 661.3,64.8" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="770" y="91.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="middle">
+<tspan x="770" dy="0">Collector</tspan>
+</text>
+<text x="770" y="125.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#657572" text-anchor="middle">
+<tspan x="770" dy="0">buffers the trace</tspan>
+</text>
+<polyline points="244,106 334,106" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="324.0950818741206" y1="110.78462087522354" x2="334" y2="106" stroke="#16796F" stroke-width="2.4"/>
+<line x1="324.0950818741206" y1="101.21537912477646" x2="334" y2="106" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="564,106 654,106" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="644.0950818741205" y1="110.78462087522354" x2="654" y2="106" stroke="#16796F" stroke-width="2.4"/>
+<line x1="644.0950818741205" y1="101.21537912477646" x2="654" y2="106" stroke="#16796F" stroke-width="2.4"/>
+<text x="130" y="173.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="130" dy="0">knows: trace ID,</tspan>
+<tspan x="130" dy="22.5">parent&#x27;s decision</tspan>
+</text>
+<text x="770" y="173.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="770" dy="0">can see: duration,</tspan>
+<tspan x="770" dy="22.5">errors, spans so far</tspan>
+</text>
+<polyline points="300,214 600,214" fill="none" stroke="#657572" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="590.0950818741205" y1="218.78462087522354" x2="600" y2="214" stroke="#657572" stroke-width="2.4"/>
+<line x1="590.0950818741205" y1="209.21537912477646" x2="600" y2="214" stroke="#657572" stroke-width="2.4"/>
+<text x="450" y="200.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="450" dy="0">time</tspan>
+</text>
+<text x="40" y="256.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#263D3B" text-anchor="start">
+<tspan x="40" dy="0">all requests: 1% failed (10 of 1,000)</tspan>
+</text>
+<rect x="40" y="270" width="820" height="24" rx="4" fill="#E6F2EE" stroke="none"/>
+<polyline points="39.3,268.4 859.2,270.8 858.9,294.2 39.9,293.4 39.5,269.3" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="40.7,269.2 859.9,269.5 861.0,294.3 41.3,293.6 39.4,270.8" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="40" y="270" width="9" height="24" rx="1" fill="#B95838" stroke="none"/>
+<polyline points="39.7,270.6 50.3,271.4 48.0,295.5 40.9,295.6 38.5,270.2" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="40.3,269.7 49.7,269.0 50.1,292.6 40.9,293.9 38.8,271.2" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="326.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#263D3B" text-anchor="start">
+<tspan x="40" dy="0">kept sample: 50% failed (10 of 20)</tspan>
+</text>
+<rect x="40" y="340" width="820" height="24" rx="4" fill="#E6F2EE" stroke="none"/>
+<polyline points="41.3,339.4 861.3,341.5 860.2,363.8 39.6,364.7 38.9,340.1" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="39.8,340.1 858.7,341.0 861.3,365.0 38.7,364.1 39.9,341.1" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="40" y="340" width="410" height="24" rx="1" fill="#B95838" stroke="none"/>
+<polyline points="41.4,339.7 451.6,340.9 450.9,365.1 40.2,363.7 40.4,339.8" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="39.3,341.5 449.8,340.8 449.3,364.1 41.2,364.3 39.0,340.9" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="40" y="380" width="16" height="16" rx="1" fill="#B95838" stroke="none"/>
+<polyline points="41.3,380.3 56.9,380.4 54.8,396.5 38.7,396.8 39.6,381.5" fill="none" stroke="#B95838" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="38.7,379.6 57.5,379.8 55.6,395.6 40.0,395.5 40.4,378.8" fill="none" stroke="#B95838" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="62" y="392.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="start">
+<tspan x="62" dy="0">failed</tspan>
+</text>
+<rect x="150" y="380" width="16" height="16" rx="1" fill="#E6F2EE" stroke="none"/>
+<polyline points="149.3,379.4 164.6,379.5 166.9,396.0 151.0,396.7 151.1,380.0" fill="none" stroke="#657572" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="148.4,379.3 167.3,378.4 167.3,397.4 149.9,396.6 149.3,381.3" fill="none" stroke="#657572" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="172" y="392.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="start">
+<tspan x="172" dy="0">succeeded</tspan>
+</text>
+</svg>

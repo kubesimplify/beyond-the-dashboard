@@ -1,0 +1,75 @@
+{
+  "query": "ALERTS{alertname=\"CheckoutSlow\"}",
+  "start_utc": "2026-10-16T16:26:53.789+00:00",
+  "end_utc": "2026-10-16T16:29:38.158+00:00",
+  "step": "5s",
+  "first_firing_utc": "2026-10-16T16:28:08.789+00:00",
+  "last_firing_utc": "2026-10-16T16:28:33.789+00:00",
+  "v2_started_utc": "2026-10-16T16:27:48.366+00:00",
+  "result": {
+    "status": "success",
+    "data": {
+      "resultType": "matrix",
+      "result": [
+        {
+          "metric": {
+            "__name__": "ALERTS",
+            "alertgroup": "checkout",
+            "alertname": "CheckoutSlow",
+            "alertstate": "firing",
+            "severity": "page"
+          },
+          "values": [
+            [
+              1792168088.789,
+              "1"
+            ],
+            [
+              1792168093.789,
+              "1"
+            ],
+            [
+              1792168098.789,
+              "1"
+            ],
+            [
+              1792168103.789,
+              "1"
+            ],
+            [
+              1792168108.789,
+              "1"
+            ],
+            [
+              1792168113.789,
+              "1"
+            ]
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "ALERTS",
+            "alertgroup": "checkout",
+            "alertname": "CheckoutSlow",
+            "alertstate": "pending",
+            "severity": "page"
+          },
+          "values": [
+            [
+              1792168078.789,
+              "1"
+            ],
+            [
+              1792168083.789,
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    "stats": {
+      "seriesFetched": "2",
+      "executionTimeMsec": 1
+    }
+  }
+}

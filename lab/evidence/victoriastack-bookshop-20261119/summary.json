@@ -1,0 +1,236 @@
+{
+  "run": "victoriastack-bookshop-20261119",
+  "ran_on": "2026-11-19",
+  "evidence_path": "lab/evidence/victoriastack-bookshop-20261119/",
+  "host": "macOS 27.0.1 (ARM64, Apple M1 Max)",
+  "docker": "4.75.0",
+  "docker_engine": "29.5.2",
+  "docker_compose": "v5.1.3",
+  "repository": "https://github.com/VictoriaMetrics/VictoriaStack",
+  "commit": "5c1df0b",
+  "commit_date": "2026-11-17",
+  "command": "make otel-single-up",
+  "containers": 12,
+  "entry_point": "http://127.0.0.1:8427",
+  "grafana": "http://127.0.0.1:3000",
+  "images": {
+    "VictoriaMetrics": "v1.156.0",
+    "vmauth": "v1.156.0",
+    "vmalert": "v1.156.0",
+    "VictoriaLogs": "v1.54.0",
+    "VictoriaTraces": "v0.13.0",
+    "OpenTelemetry Collector (contrib)": "pulled as latest",
+    "Grafana": "pulled as latest"
+  },
+  "bookshop": {
+    "started_with": "stack.py start",
+    "lab_vmagent": "v1.153.0",
+    "entry_point": "http://127.0.0.1:8427",
+    "first_checkout_trace_id": "61d702b8fc40b835f4c3eb26155b90cf",
+    "first_checkout_log_records": 8,
+    "first_checkout_services": [
+      "checkout",
+      "inventory"
+    ],
+    "interfaces": {
+      "metrics": {
+        "url": "http://127.0.0.1:8427/metrics/select/vmui/",
+        "http_status": 200
+      },
+      "logs": {
+        "url": "http://127.0.0.1:8427/logs/select/vmui/",
+        "http_status": 200
+      },
+      "traces": {
+        "url": "http://127.0.0.1:8427/traces/select/vmui/",
+        "http_status": 200
+      },
+      "grafana": {
+        "url": "http://127.0.0.1:3000/api/health",
+        "http_status": 200
+      }
+    },
+    "versions": [
+      {
+        "version": "v1",
+        "started_utc": "2026-11-19T07:28:03.220+00:00",
+        "ended_utc": "2026-11-19T07:28:32.780+00:00",
+        "requests": 60,
+        "accepted": 60,
+        "failed": 0,
+        "client_mean_ms": 51.6,
+        "client_p95_ms": 60.27,
+        "checkout_rate": 2.0,
+        "checkout_p95_seconds": 0.071875,
+        "inventory_rate": 2.0,
+        "inventory_p95_seconds": 0.062499999999999986,
+        "calls_per_checkout": 1.0,
+        "traces_found": 60,
+        "traces_200ms_or_slower": 0,
+        "checkouts_by_lookup_scope": {
+          "request": 60
+        }
+      },
+      {
+        "version": "v2",
+        "started_utc": "2026-11-19T07:28:47.792+00:00",
+        "ended_utc": "2026-11-19T07:29:17.602+00:00",
+        "requests": 60,
+        "accepted": 60,
+        "failed": 0,
+        "client_mean_ms": 297.6,
+        "client_p95_ms": 312.101,
+        "checkout_rate": 2.0,
+        "checkout_p95_seconds": 0.38571428571428573,
+        "inventory_rate": 12.1,
+        "inventory_p95_seconds": 0.07012096774193548,
+        "calls_per_checkout": 6.0,
+        "traces_found": 60,
+        "traces_200ms_or_slower": 60,
+        "checkouts_by_lookup_scope": {
+          "line": 60
+        },
+        "example_trace_id": "2ae9077ad65531ee3bf9249493b4d7eb",
+        "example_trace_span_count": 13,
+        "example_root_duration_ms": 294.1,
+        "example_decisions": [
+          "line-1 line fetch",
+          "line-2 line fetch",
+          "line-3 line fetch",
+          "line-4 line fetch",
+          "line-5 line fetch",
+          "line-6 line fetch"
+        ]
+      },
+      {
+        "version": "v2.1",
+        "started_utc": "2026-11-19T07:29:32.610+00:00",
+        "ended_utc": "2026-11-19T07:30:02.170+00:00",
+        "requests": 60,
+        "accepted": 60,
+        "failed": 0,
+        "client_mean_ms": 51.5,
+        "client_p95_ms": 58.8,
+        "checkout_rate": 2.0,
+        "checkout_p95_seconds": 0.071875,
+        "inventory_rate": 2.0,
+        "inventory_p95_seconds": 0.062499999999999986,
+        "calls_per_checkout": 1.0,
+        "traces_found": 60,
+        "traces_200ms_or_slower": 0,
+        "checkouts_by_lookup_scope": {
+          "request": 60
+        }
+      }
+    ]
+  },
+  "kubernetes": {
+    "tool": "kind",
+    "ran_on": "2026-11-22",
+    "kind": "v0.32.0",
+    "node_image": "kindest/node:v1.36.1",
+    "server_version": "v1.36.1",
+    "helm": "v4.1.4",
+    "docker_engine": "29.5.2",
+    "chart": "0.98.1",
+    "values": "lab/config/stack-values.yaml",
+    "service_type": "ClusterIP",
+    "reached_with": "kubectl port-forward -n monitoring svc/vmauth-stack 8427:8427",
+    "entry_point": "http://127.0.0.1:8427",
+    "pods_listed": 14,
+    "images": {
+      "VictoriaMetrics, vmagent, vmalert, vmauth": "v1.156.0",
+      "VictoriaLogs, vlagent": "v1.53.0",
+      "VictoriaTraces": "v0.13.0",
+      "operator": "v0.75.2"
+    },
+    "first_checkout_log_records": 8,
+    "interfaces": {
+      "metrics": {
+        "url": "http://127.0.0.1:8427/metrics/select/vmui/",
+        "http_status": 200
+      },
+      "logs": {
+        "url": "http://127.0.0.1:8427/logs/select/vmui/",
+        "http_status": 200
+      },
+      "traces": {
+        "url": "http://127.0.0.1:8427/traces/select/vmui/",
+        "http_status": 200
+      }
+    },
+    "versions": [
+      {
+        "version": "v1",
+        "started_utc": "2026-11-22T17:27:28.952+00:00",
+        "ended_utc": "2026-11-22T17:27:58.510+00:00",
+        "requests": 60,
+        "accepted": 60,
+        "failed": 0,
+        "client_mean_ms": 58.0,
+        "client_p95_ms": 70.057,
+        "checkout_rate": 2.0,
+        "checkout_p95_seconds": 0.0736111111111111,
+        "inventory_rate": 2.0,
+        "inventory_p95_seconds": 0.07142857142857142,
+        "calls_per_checkout": 1.0,
+        "traces_found": 60,
+        "traces_200ms_or_slower": 0,
+        "checkouts_by_lookup_scope": {
+          "request": 60
+        }
+      },
+      {
+        "version": "v2",
+        "started_utc": "2026-11-22T17:28:13.524+00:00",
+        "ended_utc": "2026-11-22T17:28:43.400+00:00",
+        "requests": 60,
+        "accepted": 60,
+        "failed": 0,
+        "client_mean_ms": 313.0,
+        "client_p95_ms": 352.716,
+        "checkout_rate": 2.0,
+        "checkout_p95_seconds": 0.3888888888888889,
+        "inventory_rate": 12.0,
+        "inventory_p95_seconds": 0.06428571428571428,
+        "calls_per_checkout": 5.95,
+        "traces_found": 60,
+        "traces_200ms_or_slower": 60,
+        "checkouts_by_lookup_scope": {
+          "line": 60
+        },
+        "example_trace_id": "e6ad0872b99641e2a4e9877aa33609cc",
+        "example_trace_span_count": 13,
+        "example_root_duration_ms": 300.0,
+        "example_decisions": [
+          "line-1 line fetch",
+          "line-2 line fetch",
+          "line-3 line fetch",
+          "line-4 line fetch",
+          "line-5 line fetch",
+          "line-6 line fetch"
+        ]
+      },
+      {
+        "version": "v2.1",
+        "started_utc": "2026-11-22T17:28:58.433+00:00",
+        "ended_utc": "2026-11-22T17:29:27.998+00:00",
+        "requests": 60,
+        "accepted": 60,
+        "failed": 0,
+        "client_mean_ms": 67.1,
+        "client_p95_ms": 97.62,
+        "checkout_rate": 2.0,
+        "checkout_p95_seconds": 0.07307692307692307,
+        "inventory_rate": 2.0,
+        "inventory_p95_seconds": 0.06999999999999999,
+        "calls_per_checkout": 1.0,
+        "traces_found": 60,
+        "traces_200ms_or_slower": 0,
+        "checkouts_by_lookup_scope": {
+          "request": 60
+        }
+      }
+    ]
+  }
+}

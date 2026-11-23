@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410">
+<title>measurement boundaries</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<text x="410" y="20.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#16796F" text-anchor="middle">
+<tspan x="410" dy="0">HTTP counter + duration histogram + server span</tspan>
+</text>
+<polyline points="170,76 170,62 650,62 650,76" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="176" y="50.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="start">
+<tspan x="176" dy="0">headers parsed</tspan>
+</text>
+<text x="644" y="50.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="end">
+<tspan x="644" dy="0">response written</tspan>
+</text>
+<text x="70" y="108.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="70" dy="0">route</tspan>
+</text>
+<rect x="10" y="118" width="120" height="90" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="9.8,118.1 130.2,118.7 130.8,206.9 11.5,207.0 8.4,118.7" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="8.8,119.3 130.4,119.1 129.3,208.6 9.0,206.9 11.1,116.7" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="70" y="145.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="middle">
+<tspan x="70" dy="0">POST</tspan>
+<tspan x="70" dy="25.0">/checkout</tspan>
+</text>
+<polyline points="132,163 164,163" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="154.09508187412055" y1="167.78462087522354" x2="164" y2="163" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="154.09508187412055" y1="158.21537912477646" x2="164" y2="163" stroke="#263D3B" stroke-width="2.4"/>
+<rect x="170" y="84" width="480" height="196" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="169.8,84.2 650.2,83.9 651.2,278.9 170.7,281.3 171.4,83.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="170.2,82.4 650.8,84.3 649.1,280.0 171.2,280.0 168.8,85.5" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="186" y="111.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="start">
+<tspan x="186" dy="0">checkout handler</tspan>
+</text>
+<rect x="188" y="132" width="130" height="64" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="186.5,132.0 317.2,130.6 318.8,194.9 188.4,197.4 187.3,131.3" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="188.7,131.5 317.4,132.4 319.5,195.4 186.5,196.3 188.7,133.1" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="253" y="155.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="middle">
+<tspan x="253" dy="0">Validate</tspan>
+<tspan x="253" dy="25.0">basket</tspan>
+</text>
+<rect x="345" y="132" width="130" height="64" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="345.7,132.6 475.5,132.9 476.3,196.6 345.0,195.9 344.3,130.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="344.0,132.0 474.8,132.1 474.1,196.1 343.5,196.5 343.8,133.4" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="410" y="155.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="middle">
+<tspan x="410" dy="0">Fetch</tspan>
+<tspan x="410" dy="25.0">stock</tspan>
+</text>
+<rect x="502" y="132" width="130" height="64" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="500.5,132.0 632.0,131.7 633.1,195.9 503.0,194.9 503.0,132.4" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="500.7,133.2 632.5,130.6 632.4,197.1 503.2,195.1 501.8,131.0" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="567" y="155.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="middle">
+<tspan x="567" dy="0">Compare</tspan>
+<tspan x="567" dy="25.0">quantities</tspan>
+</text>
+<polyline points="320,164 340,164" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="330.0950818741206" y1="168.78462087522354" x2="340" y2="164" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="330.0950818741206" y1="159.21537912477646" x2="340" y2="164" stroke="#263D3B" stroke-width="2.4"/>
+<polyline points="477,164 497,164" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="487.0950818741206" y1="168.78462087522354" x2="497" y2="164" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="487.0950818741206" y1="159.21537912477646" x2="497" y2="164" stroke="#263D3B" stroke-width="2.4"/>
+<polyline points="410,198 410,312" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="405.21537912477646" y1="302.0950818741206" x2="410" y2="312" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="414.78462087522354" y1="302.0950818741206" x2="410" y2="312" stroke="#263D3B" stroke-width="2.4"/>
+<text x="400" y="228.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="end">
+<tspan x="400" dy="0">decision log</tspan>
+</text>
+<text x="420" y="228.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="start">
+<tspan x="420" dy="0">client span</tspan>
+</text>
+<rect x="290" y="318" width="240" height="80" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="290.1,316.7 531.0,318.6 530.7,396.5 289.2,398.9 290.0,318.8" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="291.4,319.3 530.5,319.3 530.5,399.5 288.6,396.9 290.7,318.3" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="410" y="343.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="middle">
+<tspan x="410" dy="0">Inventory</tspan>
+</text>
+<text x="410" y="371.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#263D3B" text-anchor="middle">
+<tspan x="410" dy="0">GET /inventory/check</tspan>
+</text>
+<polyline points="652,183 694,183" fill="none" stroke="#263D3B" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="684.0950818741205" y1="187.78462087522354" x2="694" y2="183" stroke="#263D3B" stroke-width="2.4"/>
+<line x1="684.0950818741205" y1="178.21537912477646" x2="694" y2="183" stroke="#263D3B" stroke-width="2.4"/>
+<text x="795" y="98.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="795" dy="0">response</tspan>
+</text>
+<rect x="700" y="108" width="190" height="68" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="700.4,107.2 891.6,106.6 889.3,177.6 699.5,177.1 698.8,108.5" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="700.9,109.3 890.5,108.5 891.5,176.5 698.5,174.6 701.6,109.4" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="795" y="133.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="middle">
+<tspan x="795" dy="0">HTTP status 200</tspan>
+</text>
+<text x="795" y="158.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="795" dy="0">(protocol)</tspan>
+</text>
+<rect x="700" y="190" width="190" height="112" rx="8" fill="#FFFEFA" stroke="none"/>
+<polyline points="698.6,190.2 889.2,189.1 888.6,303.5 700.8,301.8 700.6,190.6" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="698.9,189.9 888.5,189.9 889.6,301.2 699.6,301.5 701.0,188.7" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="795" y="215.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="middle">
+<tspan x="795" dy="0">outcome:</tspan>
+<tspan x="795" dy="25.0">accepted |</tspan>
+<tspan x="795" dy="25.0">out_of_stock</tspan>
+</text>
+<text x="795" y="286.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="middle">
+<tspan x="795" dy="0">(business)</tspan>
+</text>
+<text x="795" y="326.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="middle">
+<tspan x="795" dy="0">outcome counter</tspan>
+</text>
+</svg>

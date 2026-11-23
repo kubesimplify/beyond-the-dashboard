@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400">
+<title>budget dials</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<text x="300" y="27.849999999999998" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#16796F" text-anchor="start">
+<tspan x="300" dy="0">less cost</tspan>
+</text>
+<text x="870" y="27.849999999999998" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#16796F" text-anchor="end">
+<tspan x="870" dy="0">more detail</tspan>
+</text>
+<polyline points="415,24 730,24" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="415,24 426,18" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="415,24 426,30" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="730,24 719,18" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="730,24 719,30" fill="none" stroke="#16796F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="14" y="64" width="872" height="58" rx="6" fill="#E6F2EE" stroke="none"/>
+<polyline points="12.4,64.6 886.3,64.1 886.9,122.7 13.9,122.3 14.1,63.4" fill="none" stroke="#E6F2EE" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="12.5,62.6 886.1,62.8 884.7,121.0 15.4,121.6 13.0,65.1" fill="none" stroke="#E6F2EE" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="97.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="start">
+<tspan x="28" dy="0">Metric labels</tspan>
+</text>
+<polyline points="300,86 870,86" fill="none" stroke="#263D3B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="528.0" cy="86.0" rx="14.0" ry="14.0" fill="#FFFEFA" stroke="#16796F" stroke-width="2"/>
+<text x="300" y="112.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="start">
+<tspan x="300" dy="0">fewer</tspan>
+</text>
+<text x="870" y="112.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="end">
+<tspan x="870" dy="0">more</tspan>
+</text>
+<rect x="14" y="130" width="872" height="58" rx="6" fill="#EDF0EB" stroke="none"/>
+<polyline points="15.3,129.6 886.2,130.5 885.8,188.6 13.1,189.3 15.3,131.1" fill="none" stroke="#EDF0EB" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="13.7,128.8 886.0,131.2 886.2,187.9 13.9,188.3 12.7,129.0" fill="none" stroke="#EDF0EB" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="163.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="start">
+<tspan x="28" dy="0">Scrape interval</tspan>
+</text>
+<polyline points="300,152 870,152" fill="none" stroke="#263D3B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="613.5" cy="152.0" rx="14.0" ry="14.0" fill="#FFFEFA" stroke="#16796F" stroke-width="2"/>
+<text x="300" y="178.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="start">
+<tspan x="300" dy="0">longer</tspan>
+</text>
+<text x="870" y="178.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="end">
+<tspan x="870" dy="0">shorter</tspan>
+</text>
+<rect x="14" y="196" width="872" height="58" rx="6" fill="#E6F2EE" stroke="none"/>
+<polyline points="13.1,195.1 885.5,195.2 886.9,253.2 15.5,255.4 15.3,195.9" fill="none" stroke="#E6F2EE" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="14.4,194.9 885.0,195.8 886.1,253.5 14.0,254.0 14.0,196.4" fill="none" stroke="#E6F2EE" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="229.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="start">
+<tspan x="28" dy="0">Trace sampling</tspan>
+</text>
+<polyline points="300,218 870,218" fill="none" stroke="#263D3B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="499.5" cy="218.0" rx="14.0" ry="14.0" fill="#FFFEFA" stroke="#16796F" stroke-width="2"/>
+<text x="300" y="244.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="start">
+<tspan x="300" dy="0">keep less</tspan>
+</text>
+<text x="870" y="244.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="end">
+<tspan x="870" dy="0">keep all</tspan>
+</text>
+<rect x="14" y="262" width="872" height="58" rx="6" fill="#EDF0EB" stroke="none"/>
+<polyline points="13.6,262.3 887.2,262.2 885.6,319.0 14.4,318.5 13.0,261.4" fill="none" stroke="#EDF0EB" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="15.3,260.4 885.7,262.3 887.5,319.8 15.5,321.5 13.5,263.1" fill="none" stroke="#EDF0EB" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="295.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="start">
+<tspan x="28" dy="0">Log level</tspan>
+</text>
+<polyline points="300,284 870,284" fill="none" stroke="#263D3B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="585.0" cy="284.0" rx="14.0" ry="14.0" fill="#FFFEFA" stroke="#16796F" stroke-width="2"/>
+<text x="300" y="310.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="start">
+<tspan x="300" dy="0">WARN and up</tspan>
+</text>
+<text x="870" y="310.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="end">
+<tspan x="870" dy="0">DEBUG</tspan>
+</text>
+<rect x="14" y="328" width="872" height="58" rx="6" fill="#E6F2EE" stroke="none"/>
+<polyline points="13.4,328.7 884.9,328.1 885.3,387.5 13.8,387.3 13.1,329.6" fill="none" stroke="#E6F2EE" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="13.4,328.4 887.2,329.3 887.2,385.4 14.2,386.0 12.8,329.5" fill="none" stroke="#E6F2EE" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="361.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#263D3B" text-anchor="start">
+<tspan x="28" dy="0">Retention</tspan>
+</text>
+<polyline points="300,350 870,350" fill="none" stroke="#263D3B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="642.0" cy="350.0" rx="14.0" ry="14.0" fill="#FFFEFA" stroke="#16796F" stroke-width="2"/>
+<text x="300" y="376.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="start">
+<tspan x="300" dy="0">shorter</tspan>
+</text>
+<text x="870" y="376.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#657572" text-anchor="end">
+<tspan x="870" dy="0">longer</tspan>
+</text>
+</svg>

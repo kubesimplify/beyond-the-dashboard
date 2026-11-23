@@ -1,0 +1,10 @@
+# vmagent reads each target's /metrics page every two seconds.
+global:
+  scrape_interval: 2s
+scrape_configs:
+  - job_name: book-lab
+    static_configs:
+      - targets: ['127.0.0.1:8080', '127.0.0.1:8081']
+  - job_name: telemetry-backends
+    static_configs:
+      - targets: ['127.0.0.1:8428', '127.0.0.1:9428', '127.0.0.1:10428', '127.0.0.1:8429', '127.0.0.1:8880']

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="256" viewBox="0 0 900 256">
+<title>trace context</title>
+<desc>Original editable hand-drawn diagram for Beyond the Dashboard.</desc>
+<rect x="15" y="44" width="254" height="140" rx="8" fill="#E6F2EE" stroke="none"/>
+<polyline points="16.0,44.3 268.0,42.9 270.4,185.2 13.5,183.5 14.6,45.4" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="13.7,45.2 269.8,43.1 269.2,185.3 14.1,185.6 16.4,44.9" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="142.0" y="85.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="142.0" dy="0">Checkout server</tspan>
+</text>
+<text x="142.0" y="123.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#657572" text-anchor="middle">
+<tspan x="142.0" dy="0">trace T / span A</tspan>
+</text>
+<rect x="322" y="44" width="254" height="140" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="322.7,43.9 574.6,43.3 575.6,185.1 320.7,182.7 322.8,44.8" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="321.2,42.6 576.4,43.3 575.3,184.0 321.3,183.9 323.0,42.7" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="449.0" y="85.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="449.0" dy="0">Checkout client</tspan>
+</text>
+<text x="449.0" y="123.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#657572" text-anchor="middle">
+<tspan x="449.0" dy="0">trace T / span B</tspan>
+</text>
+<rect x="628" y="44" width="254" height="140" rx="8" fill="#EDF0EB" stroke="none"/>
+<polyline points="627.2,42.9 883.1,42.4 883.1,183.6 627.3,183.5 628.2,44.0" fill="none" stroke="#263D3B" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="629.2,42.7 881.8,45.3 881.6,184.4 628.4,185.4 628.0,45.1" fill="none" stroke="#263D3B" stroke-width="0.8" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="755.0" y="85.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#263D3B" text-anchor="middle">
+<tspan x="755.0" dy="0">Inventory server</tspan>
+</text>
+<text x="755.0" y="123.85" font-family="Lato, Helvetica, Arial, sans-serif" font-size="21" fill="#657572" text-anchor="middle">
+<tspan x="755.0" dy="0">trace T / span C</tspan>
+</text>
+<polyline points="277,111 313,111" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="303.0950818741206" y1="115.78462087522354" x2="313" y2="111" stroke="#16796F" stroke-width="2.4"/>
+<line x1="303.0950818741206" y1="106.21537912477646" x2="313" y2="111" stroke="#16796F" stroke-width="2.4"/>
+<polyline points="584,111 619,111" fill="none" stroke="#16796F" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="609.0950818741205" y1="115.78462087522354" x2="619" y2="111" stroke="#16796F" stroke-width="2.4"/>
+<line x1="609.0950818741205" y1="106.21537912477646" x2="619" y2="111" stroke="#16796F" stroke-width="2.4"/>
+<text x="602" y="92.75" font-family="Lato, Helvetica, Arial, sans-serif" font-size="15" fill="#16796F" text-anchor="middle">
+<tspan x="602" dy="0">HTTP</tspan>
+</text>
+<text x="296" y="226.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#16796F" text-anchor="middle">
+<tspan x="296" dy="0">B is a child of A</tspan>
+</text>
+<text x="674" y="226.55" font-family="Lato, Helvetica, Arial, sans-serif" font-size="23" fill="#16796F" text-anchor="middle">
+<tspan x="674" dy="0">C is a child of B</tspan>
+</text>
+</svg>
