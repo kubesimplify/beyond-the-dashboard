@@ -47,7 +47,7 @@ SERVICE=inventory PORT=8081 .venv/bin/python app.py
 SERVICE=checkout PORT=8080 .venv/bin/python app.py
 ```
 
-`-insert.indexFlushInterval=1s` makes new traces searchable within a second in a short lab. VictoriaTraces runs with `TZ=UTC` so absolute search windows do not depend on the machine's timezone. If a port is taken, `control.py start` stops before starting anything and names the port.
+`-insert.indexFlushInterval=1s` lets a new trace open by its ID after a few seconds instead of about 20; trace search still hides the newest 30 seconds (`-search.latencyOffset`). VictoriaTraces runs with `TZ=UTC` so absolute search windows do not depend on the machine's timezone. If a port is taken, `control.py start` stops before starting anything and names the port.
 
 To stop everything, keeping the stored data:
 
@@ -99,7 +99,7 @@ Trace search uses the Jaeger-compatible query API that VictoriaTraces serves; th
 | Inventory calls per checkout | `sum(rate(checkout_inventory_calls_total[10s])) / sum(rate(app_http_requests_total{service="checkout",route="/checkout"}[10s]))` |
 | Share answered within 200 ms | `sum(rate(app_http_request_duration_seconds_bucket{service="checkout",le="0.2"}[10s])) / sum(rate(app_http_request_duration_seconds_count{service="checkout"}[10s]))` |
 | Every log record of one checkout | `trace_id:=TRACE_ID \| sort by (_time)` |
-| Lookup decisions of one checkout | `service:=checkout event:=inventory_lookup_decision trace_id:=TRACE_ID \| sort by (_time)` |
+| Lookup logs of one checkout | `service:=checkout event:=inventory_lookup_decision trace_id:=TRACE_ID \| sort by (_time)` |
 | Checkouts per lookup scope | `service:=checkout event:=inventory_lookup_decision \| stats by (lookup_scope) count_uniq(trace_id) as checkouts` |
 
 The ten-second windows keep the 30-second versions apart. On a real service, use windows such as five minutes.
@@ -132,7 +132,7 @@ The HTTP wrapper in `http_telemetry.py` measures two routes: `POST /checkout` an
 
 The outcome is `accepted` or `out_of_stock` for a valid basket (both HTTP 200), `invalid` for a rejected request body (HTTP 400), and `error` when the stock check fails (HTTP 5xx). Each completed checkout counts once in each of the first two counters, so their totals for `/checkout` are equal. The `checkout_completed` log records the same outcome before the response is sent, and `checkout.outcome` records it on the span.
 
-Logs carry `trace_id` and `span_id`, copied from the active span. `service` is the only log stream field; IDs, line IDs, and SKUs are ordinary fields, and none of them is a metric label. Severity is `INFO` for lookup decisions and normal outcomes, `WARN` for invalid input, and `ERROR` for failed checkouts.
+Logs carry `trace_id` and `span_id`, copied from the active span. `service` is the only log stream field; IDs, line IDs, and SKUs are ordinary fields, and none of them is a metric label. Severity is `INFO` for lookups and normal outcomes, `WARN` for invalid input, and `ERROR` for failed checkouts.
 
 The log sender is deliberately small. It sends one HTTP request per record from an in-memory queue of 10,000 records, prints an export error, and drops the record if delivery fails. Production collection needs a chosen shipper, capacity limits, retries, and durability. There is no OpenTelemetry Collector in the lab, and every trace is kept so the checks are repeatable.
 
@@ -150,7 +150,7 @@ It takes about five minutes and refuses to overwrite an evidence directory. The 
 - Finite metrics, with calls per checkout of 1, 6, and 1 from the metrics alone.
 - Trace discovery by service, operation, time, and minimum duration, with 60 traces per version once the data has settled.
 - Trace parentage: 3, 13, and 3 spans, each inventory server span a child of its client span.
-- Six decision logs and one completion per selected checkout, joined to the trace by trace and span IDs.
+- Six lookup logs and one completion per selected checkout, joined to the trace by trace and span IDs.
 - `CheckoutSlow` firing during `v2`, from vmalert and from the `ALERTS` series.
 - Extra out-of-stock and invalid checkouts afterward, with outcome counter deltas of 180, 3, 2, and 0, and outcome totals equal to the HTTP totals.
 
@@ -176,15 +176,17 @@ docker compose down
 
 ## Run the bookshop on VictoriaStack
 
-Pages 44 and 45 send the same apps' telemetry to VictoriaStack, first to its Docker Compose demo. Stop the lab first, because the demo listens on ports 8428, 9428, and 10428. The demo is not meant for production, as its documentation says: other machines on your network can reach its ports, and port 8427 asks for no login. So run it only on your own machine, on a network you trust. In a directory outside the lab, get the files at the commit we ran:
+Part 5 of the book (pages 46 to 48) sends the same apps' telemetry to VictoriaStack, first to its Docker Compose demo. Stop the lab first, because the demo listens on ports 8428, 9428, and 10428. The demo is not meant for production, as its documentation says: other machines on your network can reach its ports, and port 8427 does not ask for a login. So run it only on your own machine, on a network you trust. From the lab directory, stop the lab and get the files next to the companion repository, at the commit we ran:
 
 ```sh
+.venv/bin/python control.py stop
+cd ../..
 git clone https://github.com/VictoriaMetrics/VictoriaStack.git
 cd VictoriaStack && git checkout 5c1df0b
 make otel-single-up
 ```
 
-Then, from the lab directory:
+Then go back to the lab directory (`cd ../beyond-the-dashboard/lab`):
 
 ```sh
 .venv/bin/python stack.py start      # inventory, checkout, and vmagent, all sending to port 8427
@@ -192,11 +194,11 @@ Then, from the lab directory:
 .venv/bin/python stack.py stop
 ```
 
-`stack.py` changes three addresses and nothing in the apps: `LOG_URL` and `TRACE_URL` point at vmauth's `/logs` and `/traces`, and vmagent's remote write at `/metrics/insert/api/v1/write`. `traffic.py` works as before. The interfaces are under one port: `http://127.0.0.1:8427/metrics/select/vmui/`, `/logs/select/vmui/`, and `/traces/select/vmui/`. Our runs asked every question through that port, and waited 75 seconds after the last traffic before they did. `query.py` still asks ports 8428, 9428, and 10428 directly, so our runs did not use it against the stack. The Compose demo publishes those three ports as well; a Kubernetes cluster does not. `make otel-single-down` removes the stack and its data.
+`stack.py` changes three addresses and nothing in the apps: `LOG_URL` and `TRACE_URL` point at vmauth's `/logs` and `/traces`, and vmagent's remote write at `/metrics/insert/api/v1/write`. `traffic.py` works as before. The interfaces are under one port: `http://127.0.0.1:8427/metrics/select/vmui/`, `/logs/select/vmui/`, and `/traces/select/vmui/`. Our runs asked every question through that port, and waited 75 seconds after the last traffic before they did. `query.py` still asks ports 8428, 9428, and 10428 directly, so our runs did not use it against the stack. The Compose demo publishes those three ports as well; a Kubernetes cluster does not. `make -C ../../VictoriaStack otel-single-down`, from the lab directory, removes the stack and its data.
 
 ### On Kubernetes
 
-`config/stack-values.yaml` is the values file for the `victoria-metrics-k8s-stack` Helm chart: it turns on logs and traces, and gives vmauth the same three paths. Its comments say why vmauth removes two parts of the path for metrics and one for logs and traces. Page 45 uses [kind](https://kind.sigs.k8s.io/), which runs on Linux, macOS, and Windows. Any other cluster works the same way:
+`config/stack-values.yaml` is the values file for the `victoria-metrics-k8s-stack` Helm chart: it turns on logs and traces, and gives vmauth the same three paths. Its comments say why vmauth removes two parts of the path for metrics and one for logs and traces. Page 48 uses [kind](https://kind.sigs.k8s.io/), which runs on Linux, macOS, and Windows. Any other cluster works the same way:
 
 ```sh
 kind create cluster --name btd-bookshop
@@ -207,7 +209,7 @@ helm install stack vm/victoria-metrics-k8s-stack --version 0.98.1 \
 kubectl get pods -n monitoring               # wait until the pods are running
 ```
 
-vmauth's Service is of type ClusterIP, so only pods inside the cluster can reach it. As in the Compose demo, the values file gives vmauth no users, so it asks for no login. That is a demo shortcut for a cluster on your own machine. In a real setup, vmauth has users, and their credentials decide what each one can reach ([access control](https://docs.victoriametrics.com/victoriastack/access-control/)). Forward its port in a second terminal and leave it running. The Compose demo must be stopped by now, because it uses the same port:
+vmauth's Service is of type ClusterIP, so only pods inside the cluster can reach it. As in the Compose demo, the values file gives vmauth no users, so it does not ask for a login. That is a demo shortcut for a cluster on your own machine. In a real setup, vmauth has users, and their credentials decide what each one can reach ([access control](https://docs.victoriametrics.com/victoriastack/access-control/)). Forward its port in a second terminal and leave it running. The Compose demo must be stopped by now, because it uses the same port:
 
 ```sh
 kubectl port-forward -n monitoring svc/vmauth-stack 8427:8427
@@ -225,7 +227,18 @@ When you are done, run `.venv/bin/python stack.py stop`, press Ctrl+C in the ter
 
 ## Change the lab
 
-The book's exercises change the code, so make them in a copy of the whole lab directory. `control.py` always starts the `app.py` next to it. Stop the original lab first, because the copy uses the same ports. The copy also carries the original's stored telemetry in `.runtime`: delete that directory in the copy, so its queries show only the new run. Page 46 is one such change, a slower inventory; our run of it is in `evidence/slow-inventory-20261119/`.
+The book's exercises change the code, so make them in a copy of the whole lab directory. `control.py` always starts the `app.py` next to it. Stop the original lab first, because the copy uses the same ports. The copy also carries the original's stored telemetry in `.runtime`: delete that directory in the copy, so its queries show only the new run. Pages 49 and 50 walk through one such change, a slower inventory, with these lines, run from the lab directory:
+
+```sh
+.venv/bin/python control.py stop
+cd .. && cp -R lab lab-slow && cd lab-slow
+rm -rf .runtime
+sed -i.bak 's/time.sleep(.04)/time.sleep(.3)/' app.py
+.venv/bin/python control.py start
+.venv/bin/python traffic.py v1
+```
+
+Our run of it is in `evidence/slow-inventory-20261119/`. To undo the change, run `sed -i.bak 's/time.sleep(.3)/time.sleep(.04)/' app.py` in the copy.
 
 ## The files
 
@@ -237,8 +250,8 @@ The book's exercises change the code, so make them in a copy of the whole lab di
 | `setup.py`, `control.py` | Download the pinned programs, then start and stop all seven |
 | `traffic.py`, `query.py` | Send steady traffic to one version of checkout, and query the three databases from the command line |
 | `scenario.py` | Records a full run with every check |
-| `stack.py` | Starts the two apps and vmagent against VictoriaStack (pages 44 and 45) |
-| `config/` | The scrape targets, the alert rules, and the Helm values for page 45 |
+| `stack.py` | Starts the two apps and vmagent against VictoriaStack (Part 5, pages 46 to 48) |
+| `config/` | The scrape targets, the alert rules, and the Helm values for page 48 |
 | `compose.yml`, `Dockerfile` | The same seven programs in containers |
 | `test_*.py` | The unit tests and the HTTP checks |
 
@@ -251,12 +264,12 @@ The app version is `book-lab-6`. The first three runs below are full `scenario.p
 | The run behind the book's numbers, on macOS 27.0.1 (ARM64) with Python 3.12.4 | 16 October 2026 | `evidence/book-lab-6-20261016/` |
 | The same run on Linux (Ubuntu 24.04 on x86_64, Python 3.12.3) | 4 November 2026 | Passed |
 | The same run against `compose.yml` | 19 November 2026 | Passed |
-| Pages 44 and 45: the same apps on the VictoriaStack demo, and on a kind cluster | 19 and 22 November 2026 | `evidence/victoriastack-bookshop-20261119/` |
-| Page 46: a slower inventory | 19 November 2026 | `evidence/slow-inventory-20261119/` |
+| Part 5, pages 46 to 48: the same apps on the VictoriaStack demo, and on a kind cluster | 19 and 22 November 2026 | `evidence/victoriastack-bookshop-20261119/` |
+| Part 6, pages 49 and 50: a slower inventory | 19 November 2026 | `evidence/slow-inventory-20261119/` |
 
 The evidence folders hold the results that the book cites. Your own runs go next to them, and git ignores them. A recorded file is what our run printed, with one detail replaced: `<machine-name>` stands for the network name of the computer.
 
-VictoriaTraces has not reached version 1.0 yet. Its README says its on-disk data structures and API endpoints may change before the first release, and the VictoriaStack documentation calls all three databases battle-tested in production. The lab pins the versions in the table at the top, and `versions.json` holds them.
+VictoriaTraces has not reached version 1.0 yet, but the VictoriaMetrics team considers it production ready. The lab pins the versions in the table at the top, and `versions.json` holds them.
 
 Every source the book cites is in [SOURCES.md](../SOURCES.md).
 

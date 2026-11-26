@@ -51,7 +51,7 @@
 <tspan x="44" dy="0">4</tspan>
 </text>
 <text x="150" y="281.0" font-family="Lato, Helvetica, Arial, sans-serif" font-size="20" fill="#263D3B" text-anchor="middle">
-<tspan x="150" dy="0">Decision logs: same</tspan>
+<tspan x="150" dy="0">Lookup logs: same</tspan>
 <tspan x="150" dy="25.0">key, fetch per line</tspan>
 </text>
 <text x="150" y="339.3" font-family="Lato, Helvetica, Arial, sans-serif" font-size="18" fill="#16796F" text-anchor="middle">

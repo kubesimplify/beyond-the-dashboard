@@ -1,6 +1,6 @@
-# The recorded run behind Parts 2 and 3
+# The recorded run behind Parts 2 to 4
 
-Every number, ID, and output block in Parts 2 and 3 of *Beyond the Dashboard* comes from one run of this lab, made on 16 October 2026 on macOS 27.0.1 (ARM64) with Python 3.12.4. `lab/scenario.py` recorded it: one checkout, then 60 checkouts each for versions 1, 2, and 2.1, with every signal checked along the way. These are the result files that the book cites.
+Every number, ID, and output block in Parts 2 to 4 of *Beyond the Dashboard* comes from one run of this lab, made on 16 October 2026 on macOS 27.0.1 (ARM64) with Python 3.12.4. `lab/scenario.py` recorded it: one checkout, then 60 checkouts each for versions 1, 2, and 2.1, with every signal checked along the way. These are the result files that the book cites.
 
 | File | What it holds |
 | --- | --- |

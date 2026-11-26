@@ -55,11 +55,11 @@
 <tspan x="290" dy="0">Logs</tspan>
 </text>
 <text x="290" y="346.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#657572" text-anchor="start">
-<tspan x="290" dy="0">Records of what</tspan>
-<tspan x="290" dy="23.75">the code decided</tspan>
+<tspan x="290" dy="0">Messages the app</tspan>
+<tspan x="290" dy="23.75">writes as it runs</tspan>
 </text>
 <text x="870" y="390.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#16796F" text-anchor="end">
-<tspan x="870" dy="0">What happened, and why?</tspan>
+<tspan x="870" dy="0">What did the app report?</tspan>
 </text>
 <text x="510" y="48.15" font-family="Lato, Helvetica, Arial, sans-serif" font-size="19" fill="#263D3B" text-anchor="start">
 <tspan x="510" dy="0">app_http_requests_total +1</tspan>

@@ -51,14 +51,14 @@ When you are done:
 .venv/bin/python control.py stop
 ```
 
-Pages 44 and 45 run the same apps on VictoriaStack, first with Docker and then on a kind cluster. [lab/README.md](lab/README.md) has those steps, every query the book uses, and what was tested.
+Part 5 (pages 46 to 48) runs the same apps on VictoriaStack, first with Docker and then on a kind cluster. [lab/README.md](lab/README.md) has those steps, every query the book uses, and what was tested.
 
 ## What is here
 
 | Path | What it holds |
 | --- | --- |
 | [lab/](lab/) | The checkout and inventory apps, and the scripts that set up, start, query, and test them |
-| [lab/evidence/](lab/evidence/) | The recorded results that the book cites: the run behind Parts 2 and 3, and the runs of pages 44 to 46 |
+| [lab/evidence/](lab/evidence/) | The recorded results that the book cites: the run behind Parts 2 to 4, and the runs of Parts 5 and 6 |
 | [diagrams/](diagrams/) | The book's diagrams as editable Excalidraw files, each with an SVG copy |
 | [SOURCES.md](SOURCES.md) | Every source the book cites, with the claim it supports |
 

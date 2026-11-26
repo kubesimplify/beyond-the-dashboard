@@ -61,7 +61,7 @@
 <line x1="405.21537912477646" y1="302.0950818741206" x2="410" y2="312" stroke="#263D3B" stroke-width="2.4"/>
 <line x1="414.78462087522354" y1="302.0950818741206" x2="410" y2="312" stroke="#263D3B" stroke-width="2.4"/>
 <text x="400" y="228.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="end">
-<tspan x="400" dy="0">decision log</tspan>
+<tspan x="400" dy="0">lookup log</tspan>
 </text>
 <text x="420" y="228.45" font-family="Lato, Helvetica, Arial, sans-serif" font-size="17" fill="#16796F" text-anchor="start">
 <tspan x="420" dy="0">client span</tspan>
